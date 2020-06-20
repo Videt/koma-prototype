@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     float jumpForce = 300f;
 
     Rigidbody2D hero;
-    public bool isGrounded = false;
+    bool isGrounded = false;
     [SerializeField] Transform groundCheck;
     float groundRadius = 0.1f;
     [SerializeField] LayerMask whatIsGround;
@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         Vector2 m = new Vector2(move.x, move.y) * Time.deltaTime * speed;
