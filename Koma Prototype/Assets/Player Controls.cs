@@ -41,6 +41,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Hit"",
+                    ""type"": ""Button"",
+                    ""id"": ""174e676c-3cda-455d-bfa0-487c8a4c14ab"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -98,6 +106,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Run"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9bcda41c-dce3-4933-9624-e37a94b7e107"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Hit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -109,6 +128,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Gameplay_Move = m_Gameplay.FindAction("Move", throwIfNotFound: true);
         m_Gameplay_Jump = m_Gameplay.FindAction("Jump", throwIfNotFound: true);
         m_Gameplay_Run = m_Gameplay.FindAction("Run", throwIfNotFound: true);
+        m_Gameplay_Hit = m_Gameplay.FindAction("Hit", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -161,6 +181,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Gameplay_Move;
     private readonly InputAction m_Gameplay_Jump;
     private readonly InputAction m_Gameplay_Run;
+    private readonly InputAction m_Gameplay_Hit;
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
@@ -168,6 +189,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Move => m_Wrapper.m_Gameplay_Move;
         public InputAction @Jump => m_Wrapper.m_Gameplay_Jump;
         public InputAction @Run => m_Wrapper.m_Gameplay_Run;
+        public InputAction @Hit => m_Wrapper.m_Gameplay_Hit;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -186,6 +208,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Run.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRun;
                 @Run.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRun;
                 @Run.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRun;
+                @Hit.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnHit;
+                @Hit.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnHit;
+                @Hit.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnHit;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -199,6 +224,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Run.started += instance.OnRun;
                 @Run.performed += instance.OnRun;
                 @Run.canceled += instance.OnRun;
+                @Hit.started += instance.OnHit;
+                @Hit.performed += instance.OnHit;
+                @Hit.canceled += instance.OnHit;
             }
         }
     }
@@ -208,5 +236,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnRun(InputAction.CallbackContext context);
+        void OnHit(InputAction.CallbackContext context);
     }
 }
