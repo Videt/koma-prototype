@@ -12,6 +12,11 @@ public class Health : MonoBehaviour
     [SerializeField] Sprite fullHeart;
     [SerializeField] Sprite emptyHeart;
 
+    public void TakeEnemyDamage(int attackdamage)
+    {
+        health -= attackdamage;
+
+    }
     void Update()
     {
         for (int i = 0; i < hearts.Length; i++)
