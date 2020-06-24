@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     float jumpForce = 300f;
 
     Rigidbody2D hero;
-    bool isGrounded = false;
+    public bool isGrounded = false;
     [SerializeField] Transform groundCheck;
     float groundRadius = 0.1f;
     [SerializeField] LayerMask whatIsGround;

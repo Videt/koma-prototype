@@ -43,9 +43,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Hit"",
+                    ""name"": ""Attack"",
                     ""type"": ""Button"",
                     ""id"": ""174e676c-3cda-455d-bfa0-487c8a4c14ab"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""PowerfulAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""8514750b-35b0-43b7-95bc-ee83067998e1"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -114,7 +122,18 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Hit"",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""cf17f90b-75c8-4ca3-84a2-65f09b9a7330"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""PowerfulAttack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -128,7 +147,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Gameplay_Move = m_Gameplay.FindAction("Move", throwIfNotFound: true);
         m_Gameplay_Jump = m_Gameplay.FindAction("Jump", throwIfNotFound: true);
         m_Gameplay_Run = m_Gameplay.FindAction("Run", throwIfNotFound: true);
-        m_Gameplay_Hit = m_Gameplay.FindAction("Hit", throwIfNotFound: true);
+        m_Gameplay_Attack = m_Gameplay.FindAction("Attack", throwIfNotFound: true);
+        m_Gameplay_PowerfulAttack = m_Gameplay.FindAction("PowerfulAttack", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -181,7 +201,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Gameplay_Move;
     private readonly InputAction m_Gameplay_Jump;
     private readonly InputAction m_Gameplay_Run;
-    private readonly InputAction m_Gameplay_Hit;
+    private readonly InputAction m_Gameplay_Attack;
+    private readonly InputAction m_Gameplay_PowerfulAttack;
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
@@ -189,7 +210,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Move => m_Wrapper.m_Gameplay_Move;
         public InputAction @Jump => m_Wrapper.m_Gameplay_Jump;
         public InputAction @Run => m_Wrapper.m_Gameplay_Run;
-        public InputAction @Hit => m_Wrapper.m_Gameplay_Hit;
+        public InputAction @Attack => m_Wrapper.m_Gameplay_Attack;
+        public InputAction @PowerfulAttack => m_Wrapper.m_Gameplay_PowerfulAttack;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -208,9 +230,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Run.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRun;
                 @Run.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRun;
                 @Run.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnRun;
-                @Hit.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnHit;
-                @Hit.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnHit;
-                @Hit.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnHit;
+                @Attack.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnAttack;
+                @Attack.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnAttack;
+                @Attack.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnAttack;
+                @PowerfulAttack.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPowerfulAttack;
+                @PowerfulAttack.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPowerfulAttack;
+                @PowerfulAttack.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPowerfulAttack;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -224,9 +249,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Run.started += instance.OnRun;
                 @Run.performed += instance.OnRun;
                 @Run.canceled += instance.OnRun;
-                @Hit.started += instance.OnHit;
-                @Hit.performed += instance.OnHit;
-                @Hit.canceled += instance.OnHit;
+                @Attack.started += instance.OnAttack;
+                @Attack.performed += instance.OnAttack;
+                @Attack.canceled += instance.OnAttack;
+                @PowerfulAttack.started += instance.OnPowerfulAttack;
+                @PowerfulAttack.performed += instance.OnPowerfulAttack;
+                @PowerfulAttack.canceled += instance.OnPowerfulAttack;
             }
         }
     }
@@ -236,6 +264,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnRun(InputAction.CallbackContext context);
-        void OnHit(InputAction.CallbackContext context);
+        void OnAttack(InputAction.CallbackContext context);
+        void OnPowerfulAttack(InputAction.CallbackContext context);
     }
 }

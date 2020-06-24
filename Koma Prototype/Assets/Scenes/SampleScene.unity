@@ -151,6 +151,36 @@ Transform:
   m_Father: {fileID: 580986287}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &232919942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 232919943}
+  m_Layer: 9
+  m_Name: JumpAttackPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &232919943
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232919942}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.093, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 871520238}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &342574550
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,11 +616,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwAttack: 0.5
   attackPos: {fileID: 1150096594}
+  JumpAttackPos: {fileID: 232919943}
   enemy:
     serializedVersion: 2
     m_Bits: 256
-  attackRange: 0.58
+  attackRange: 0.75
   damage: 1
+  playermovment: {fileID: 580986289}
   anim: {fileID: 580986286}
 --- !u!114 &580986289
 MonoBehaviour:
@@ -606,6 +638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   runSpeed: 10
+  isGrounded: 0
   groundCheck: {fileID: 149125466}
   whatIsGround:
     serializedVersion: 2
@@ -984,9 +1017,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871520237}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.133, y: -0.32799983, z: 0}
+  m_LocalPosition: {x: -0.146, y: -0.324, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 232919943}
   m_Father: {fileID: 1783538848}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1095,7 +1129,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167358047}
   m_LocalRotation: {x: -0, y: -0, z: 0.36723295, w: 0.930129}
-  m_LocalPosition: {x: -0.92367065, y: -0.5050957, z: 2.37793}
+  m_LocalPosition: {x: -0.949, y: -0.448, z: 2.37793}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1150096594}
