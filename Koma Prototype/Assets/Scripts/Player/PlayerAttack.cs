@@ -9,11 +9,11 @@ public class PlayerAttack : MonoBehaviour
     public float startTimeBtwAttack;
 
     public Transform attackPos;
-    public Transform JumpAttackPos;
+    public Transform jumpAttackPos;
     public LayerMask enemy;
     public float attackRange;
     public int damage = 1;
-    public PlayerMovement playermovment;   
+    public PlayerMovement playerMovement;
     public Animator anim;
 
     PlayerControls controls;
@@ -27,29 +27,25 @@ public class PlayerAttack : MonoBehaviour
     {
         controls.Gameplay.Enable();
     }
-    void OnDisavle()
+    void OnDisable()
     {
         controls.Gameplay.Disable();
     }
     void Update()
     {
-            timeBtwAttack -= Time.deltaTime;
-        
+            timeBtwAttack -= Time.deltaTime; 
     }
     private void OnDrawGizmosSelected()         // отрисовка в Gizmos  области, которая наносит урон
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
-    }
-    private void OnDrawGizmosSelected_2()         // отрисовка в Gizmos  области, которая наносит урон
-    {
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(JumpAttackPos.position, attackRange);
+        Gizmos.DrawWireSphere(jumpAttackPos.position, attackRange);
     }
     private void OnAttack()
     {
         if (timeBtwAttack <= 0 )
-        { if (playermovment.isGrounded == true)
+        { if (playerMovement.isGrounded == true)
             {
                 anim.SetTrigger("Attack");
                 timeBtwAttack = startTimeBtwAttack;
@@ -72,7 +68,7 @@ public class PlayerAttack : MonoBehaviour
     }
     private void OnPowerfulAttack()
     {
-        if (timeBtwAttack <= 0  )
+        if (timeBtwAttack <= 0)
         {
             anim.SetTrigger("PowerfulAttack");
             timeBtwAttack = 2 * startTimeBtwAttack;
@@ -89,7 +85,7 @@ public class PlayerAttack : MonoBehaviour
     }
     public void ReleaseJumpDamage()
     {
-        Collider2D[] enemies = Physics2D.OverlapCircleAll(JumpAttackPos.position, attackRange, enemy);
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(jumpAttackPos.position, attackRange, enemy);
         for (int i = 0; i < enemies.Length; i++)
         {
             enemies[i].GetComponent<Enemy>().TakeDamage(damage);

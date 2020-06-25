@@ -616,13 +616,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTimeBtwAttack: 0.5
   attackPos: {fileID: 1150096594}
-  JumpAttackPos: {fileID: 232919943}
+  jumpAttackPos: {fileID: 232919943}
   enemy:
     serializedVersion: 2
     m_Bits: 256
   attackRange: 0.75
   damage: 1
-  playermovment: {fileID: 580986289}
+  playerMovement: {fileID: 580986289}
   anim: {fileID: 580986286}
 --- !u!114 &580986289
 MonoBehaviour:
