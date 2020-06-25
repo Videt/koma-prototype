@@ -40,6 +40,14 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         Vector2 m = new Vector2(move.x, move.y) * Time.deltaTime * speed;
         transform.Translate(m, Space.World);
+        if (move.x<0)
+        {
+            transform.localRotation = Quaternion.Euler(0, 0, 0);
+        }
+        if (move.x > 0)
+        {
+            transform.localRotation = Quaternion.Euler(0, 180, 0);
+        }
     }
     private void OnEnable()
     {
