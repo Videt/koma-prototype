@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -12,23 +13,22 @@ public class Health : MonoBehaviour
     [SerializeField] Sprite fullHeart;
     [SerializeField] Sprite emptyHeart;
 
-    Rigidbody2D hero;
-    float posX, posY; // изначальные позиции
+    GameMaster gm;
     public void TakeEnemyDamage(int attackdamage)
     {
         health -= attackdamage;
     }
     void Start()
     {
-        hero = GetComponent<Rigidbody2D>();
-        posX = hero.position.x;
-        posY = hero.position.y;
+        gm = GameObject.FindGameObjectWithTag("GameMaster").GetComponent<GameMaster>();
+        transform.position = gm.lastCheckpointPos;
     }
     void Update()
     {
         if (health <= 0)
         {
-            hero.position = new Vector2(posX, posY);
+            int currentScene = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentScene);
             health = 4;
         }
 
