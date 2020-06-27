@@ -6,19 +6,21 @@ using UnityEngine.InputSystem.Composites;
 
 public class PlayerMovement : MonoBehaviour
 {
-    PlayerControls controls;
-    Vector2 move;
-    float speed = 5f;
-    [SerializeField] float walkSpeed = 5f;
-    [SerializeField] float runSpeed = 10f;
-
-    float jumpForce = 300f;
-
-    Rigidbody2D hero;
+    [SerializeField] public float walkSpeed = 5f;
+    [SerializeField] public float runSpeed = 10f;
     public bool isGrounded = false;
-    [SerializeField] Transform groundCheck;
-    float groundRadius = 0.1f;
-    [SerializeField] LayerMask whatIsGround;
+    [SerializeField] public Transform groundCheck;
+    [SerializeField] public LayerMask whatIsGround;
+    public Transform Effect;
+
+    private PlayerControls controls;
+    private Vector2 move;
+    private float speed = 5f;
+    private float jumpForce = 300f;
+    private Rigidbody2D hero;
+    private float groundRadius = 0.1f;
+
+
     void Awake()
     {
         hero = GetComponent<Rigidbody2D>();
@@ -37,10 +39,15 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         Vector2 m = new Vector2(move.x, move.y) * Time.deltaTime * speed;
         transform.Translate(m, Space.World);
-        if (move.x<0)
+        var x = isGrounded;
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+        if (!x && isGrounded)
+        {
+            Instantiate(Effect, groundCheck.position,Quaternion.identity);
+        }
+            if (move.x<0)
         {
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
