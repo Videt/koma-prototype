@@ -12,13 +12,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public Transform groundCheck;
     [SerializeField] public LayerMask whatIsGround;
     public Transform Effect;
+    public Animator anim;
+    public bool isRunning;
+    public bool isWalking;
 
     private PlayerControls controls;
     private Vector2 move;
     private float speed = 5f;
     private float jumpForce = 300f;
     private Rigidbody2D hero;
-    private float groundRadius = 0.1f;
+    private float groundRadius = 1f;
 
 
     void Awake()
@@ -29,9 +32,13 @@ public class PlayerMovement : MonoBehaviour
 
         controls.Gameplay.Move.performed += ctx => move = ctx.ReadValue<Vector2>();
         controls.Gameplay.Move.canceled += ctx => move = Vector2.zero;
+        controls.Gameplay.Move.performed += ctx => isWalking = true;
+        controls.Gameplay.Move.canceled += ctx => isWalking = false;
 
         controls.Gameplay.Run.performed += ctx => speed = runSpeed;
         controls.Gameplay.Run.canceled += ctx => speed = walkSpeed;
+        controls.Gameplay.Run.performed += ctx => isRunning=true;
+        controls.Gameplay.Run.canceled += ctx => isRunning=false;
 
         controls.Gameplay.Jump.performed += ctx => Jump();
     }
@@ -39,6 +46,22 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (isWalking == true)
+        {
+            anim.SetBool("isWalking", true);
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+        }
+        if (isRunning==true)
+        {
+            anim.SetBool("isRunning", true);
+        }
+        else
+        {
+            anim.SetBool("isRunning", false);
+        }
         Vector2 m = new Vector2(move.x, move.y) * Time.deltaTime * speed;
         transform.Translate(m, Space.World);
         var x = isGrounded;
@@ -67,6 +90,10 @@ public class PlayerMovement : MonoBehaviour
     void Jump()
     {
         if (isGrounded)
+        {
             hero.AddForce(new Vector2(0, jumpForce));
+            anim.SetTrigger("Jump");
+        }
+            
     }
 }
