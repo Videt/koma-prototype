@@ -761,7 +761,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 5
   runSpeed: 10
+  climbSpeed: 4
+  jumpForce: 300
   isGrounded: 0
+  canWallJump: 0
+  horizontalJumpForce: 4000
   groundCheck: {fileID: 149125466}
   whatIsGround:
     serializedVersion: 2
@@ -841,7 +845,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580986285}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a9105f3e8d3e3244ac6f5d6a6d7deeb, type: 3}
   m_Name: 
@@ -2506,8 +2510,8 @@ GameObject:
   - component: {fileID: 1886807317}
   - component: {fileID: 1886807316}
   m_Layer: 0
-  m_Name: ground (1)
-  m_TagString: Untagged
+  m_Name: Wall
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2521,7 +2525,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1886807315}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 44d0a54db6bd2034cbf79cf8af7ce6d8, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -2596,7 +2600,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886807315}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -11.6, y: 2.87, z: 0}
+  m_LocalPosition: {x: -8.62, y: 2.64, z: 0}
   m_LocalScale: {x: 8.480484, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
