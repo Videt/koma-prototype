@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class WallSlide : MonoBehaviour
 {
-    public float distance = 2f;
     PlayerMovement player;
+    public float distance = 2f;
     public float speed = 2f;
-    public Transform RayPoint;
+    public float Axis;
+    public Transform Point;
     void Start()
     {
         player = GetComponent<PlayerMovement>();
@@ -17,13 +18,15 @@ public class WallSlide : MonoBehaviour
     void Update()
     {
         Physics2D.queriesStartInColliders = false;
-        RaycastHit2D hit = Physics2D.Raycast(RayPoint.transform.position, transform.right*-1, distance);
+        RaycastHit2D hit = Physics2D.Raycast(Point.transform.position, -transform.right, distance);
         Debug.DrawLine(transform.position, hit.point, Color.red);
+
+        Axis = Input.GetAxisRaw("Vertical");
         if (player.isGrounded == false && hit.collider != null)
         {
             if (GetComponent<Rigidbody2D>().velocity.y < speed)
             {
-                GetComponent<Rigidbody2D>().velocity = new Vector2(0, speed);
+                GetComponent<Rigidbody2D>().velocity = new Vector2(0, speed*Axis);
             }
         }
     }
