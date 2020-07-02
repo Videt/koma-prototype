@@ -770,7 +770,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 1335
-  Effect: {fileID: 5453521274373257893, guid: 68aaa2cb224d00f4d90f5a8c28035e02, type: 3}
+  Effect: {fileID: 2317207190354689122, guid: 68aaa2cb224d00f4d90f5a8c28035e02, type: 3}
   anim: {fileID: 0}
   isRunning: 0
   isWalking: 0
@@ -842,15 +842,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580986285}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a9105f3e8d3e3244ac6f5d6a6d7deeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 1.5
-  speed: -0.5
+  distance: 2
+  speed: 0
   Axis: 0
-  Point: {fileID: 0}
+  Point: {fileID: 1277962476}
 --- !u!1 &646848080
 GameObject:
   m_ObjectHideFlags: 0
