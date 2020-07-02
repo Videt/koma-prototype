@@ -21,25 +21,13 @@ public class PlayerMovement : MonoBehaviour
     public float horizontalJumpForce = 4000f;
 
     Rigidbody2D hero;
-    Transform groundCheck;
-    float groundRadius = 0.1f;
-    LayerMask whatIsGround;
-    public float walkSpeed = 5f;
-    public float runSpeed = 10f;
-    public bool isGrounded = false;
+    float groundRadius = 1f;
     public Transform groundCheck;
     public LayerMask whatIsGround;
     public Transform Effect;
     public Animator anim;
     public bool isRunning;
     public bool isWalking;
-
-    private PlayerControls controls;
-    private Vector2 move;
-    private float speed = 5f;
-    private float jumpForce = 300f;
-    private Rigidbody2D hero;
-    private float groundRadius = 1f;
 
     void Awake()
     {
@@ -67,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
         controls.Gameplay.Climb.canceled += ctx => move = Vector2.zero;
     }
 
-    void FixedUpdate()
+    void Update()
     {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
         Move();
@@ -88,15 +76,14 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("isRunning", false);
         }
-        Vector2 m = new Vector2(move.x, move.y) * Time.deltaTime * speed;
-        transform.Translate(m, Space.World);
-        var x = isGrounded;
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
+
+        bool x = isGrounded;
+
         if (!x && isGrounded)
         {
             Instantiate(Effect, groundCheck.position,Quaternion.identity);
         }
-            if (move.x<0)
+            if (move.x < 0)
         {
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
@@ -151,8 +138,7 @@ public class PlayerMovement : MonoBehaviour
         {
             hero.AddForce(new Vector2(0, jumpForce));
             anim.SetTrigger("Jump");
-        }
-            
+        }     
     }
     void Climb()
     {
