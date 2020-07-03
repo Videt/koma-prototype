@@ -57,6 +57,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Climb"",
+                    ""type"": ""Button"",
+                    ""id"": ""a4bdc9c8-794a-46e7-bc97-7af3bf301439"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -136,6 +144,39 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""PowerfulAttack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""6ef074bf-6c42-45a1-b8c1-9d43d858e495"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Climb"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""e0444e6e-bf0a-4a29-99a8-62379403d6a3"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Climb"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""3ace08f5-2445-4359-a29a-edc5e947aef1"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Climb"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -149,6 +190,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Gameplay_Run = m_Gameplay.FindAction("Run", throwIfNotFound: true);
         m_Gameplay_Attack = m_Gameplay.FindAction("Attack", throwIfNotFound: true);
         m_Gameplay_PowerfulAttack = m_Gameplay.FindAction("PowerfulAttack", throwIfNotFound: true);
+        m_Gameplay_Climb = m_Gameplay.FindAction("Climb", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -203,6 +245,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Gameplay_Run;
     private readonly InputAction m_Gameplay_Attack;
     private readonly InputAction m_Gameplay_PowerfulAttack;
+    private readonly InputAction m_Gameplay_Climb;
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
@@ -212,6 +255,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Run => m_Wrapper.m_Gameplay_Run;
         public InputAction @Attack => m_Wrapper.m_Gameplay_Attack;
         public InputAction @PowerfulAttack => m_Wrapper.m_Gameplay_PowerfulAttack;
+        public InputAction @Climb => m_Wrapper.m_Gameplay_Climb;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -236,6 +280,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @PowerfulAttack.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPowerfulAttack;
                 @PowerfulAttack.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPowerfulAttack;
                 @PowerfulAttack.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnPowerfulAttack;
+                @Climb.started -= m_Wrapper.m_GameplayActionsCallbackInterface.OnClimb;
+                @Climb.performed -= m_Wrapper.m_GameplayActionsCallbackInterface.OnClimb;
+                @Climb.canceled -= m_Wrapper.m_GameplayActionsCallbackInterface.OnClimb;
             }
             m_Wrapper.m_GameplayActionsCallbackInterface = instance;
             if (instance != null)
@@ -255,6 +302,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @PowerfulAttack.started += instance.OnPowerfulAttack;
                 @PowerfulAttack.performed += instance.OnPowerfulAttack;
                 @PowerfulAttack.canceled += instance.OnPowerfulAttack;
+                @Climb.started += instance.OnClimb;
+                @Climb.performed += instance.OnClimb;
+                @Climb.canceled += instance.OnClimb;
             }
         }
     }
@@ -266,5 +316,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnRun(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
         void OnPowerfulAttack(InputAction.CallbackContext context);
+        void OnClimb(InputAction.CallbackContext context);
     }
 }

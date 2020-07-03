@@ -5,7 +5,7 @@ using UnityEngine;
 public class DynamicTrees : MonoBehaviour
 {
     float levelTimer;
-    float RotationObj;
+    float rotationObj;
     public float Speed;
     public float Range;
     public bool Randomize;
@@ -35,8 +35,8 @@ public class DynamicTrees : MonoBehaviour
         }
             
         levelTimer += Time.deltaTime;
-        RotationObj = Mathf.Sin(levelTimer * Speed * axis);
-        transform.rotation = Quaternion.Euler(0, 0, Range * RotationObj);
+        rotationObj = Mathf.Sin(levelTimer * Speed * axis);
+        transform.rotation = Quaternion.Euler(0, 0, Range * rotationObj);
     }
     void InRandom()
     {
