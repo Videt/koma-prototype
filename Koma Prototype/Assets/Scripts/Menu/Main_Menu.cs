@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Main_Menu : MonoBehaviour
 {
     public AudioClip MainMusic;
+    public GameObject options;
+    public GameObject MenuUI;
     public void Start()
     {
         GetComponent<AudioSource>().PlayOneShot(MainMusic);
@@ -19,5 +21,15 @@ public class Main_Menu : MonoBehaviour
     {
         Debug.Log("quit");
         Application.Quit();
+    }
+    public void Options()
+    {
+        options.SetActive(true);
+        MenuUI.SetActive(false);
+    }
+    public void Back() //вернуться в меню из опций или еще чего
+    {
+        options.SetActive(false);
+        MenuUI.SetActive(true);
     }
 }
