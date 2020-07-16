@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Swamp.unity
+    guid: 96340a3c33a5c8549a5b5536bdf43580
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: f0d6811bbe36d564c8195edd51bb4603,
       type: 2}
