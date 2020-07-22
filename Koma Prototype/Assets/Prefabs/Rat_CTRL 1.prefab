@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1998827956838994608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1204309789176655987}
+  m_Layer: 11
+  m_Name: attackPOS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1204309789176655987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998827956838994608}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8384122003914674817}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2257351667206246684
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,6 +3943,7 @@ GameObject:
   - component: {fileID: 8384122005406822809}
   - component: {fileID: 6712181384641037222}
   - component: {fileID: 6712181384641037225}
+  - component: {fileID: 4694077797582045893}
   m_Layer: 9
   m_Name: Rat_CTRL 1
   m_TagString: Enemy
@@ -4155,6 +4186,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.22, y: 17.76}
   m_EdgeRadius: 0
+--- !u!114 &4694077797582045893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2268252719334594638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 609f73d41c09af54b8d1cde5a6d22786, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startTimeBtwAttack: 1
+  anim: {fileID: 8384122005406822809}
+  attackPos: {fileID: 1204309789176655987}
+  player:
+    serializedVersion: 2
+    m_Bits: 512
+  attackRange: 3
+  health: 2
+  speed: 10
+  stoppingdistance: 5
+  fardistance: 1000
+  timer: 2
+  canmovetime: 2
+  attackdamage: 1
 --- !u!1 &2268252719352729077
 GameObject:
   m_ObjectHideFlags: 0
@@ -14911,9 +14968,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8384122003914674823}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.167, y: 0.272, z: 0}
+  m_LocalPosition: {x: 5.34, y: 0.272, z: 0}
   m_LocalScale: {x: 1.4970858, y: 1.4970858, z: 1.4970858}
-  m_Children: []
+  m_Children:
+  - {fileID: 1204309789176655987}
   m_Father: {fileID: 2268252719334594632}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
