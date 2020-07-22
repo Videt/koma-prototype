@@ -36,9 +36,11 @@ public class Enemy : MonoBehaviour
         {
             //transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             transform.Translate(Vector2.right * Time.deltaTime * speed);
+            anim.SetTrigger("isWalking");
         }
         if (Vector2.Distance(transform.position, target.position) <= stoppingdistance)
         {
+            
             Attack();
           //  transform.position = Vector2.MoveTowards(transform.position, target.position, 0 * Time.deltaTime);
             transform.Translate(Vector2.right * Time.deltaTime * speed * 0);
@@ -63,15 +65,9 @@ public class Enemy : MonoBehaviour
     {
         if (timeBtwAttack <= 0)
         {
-            anim.SetTrigger("attack");
+            anim.SetTrigger("Attack");
             timeBtwAttack = startTimeBtwAttack;
-            Collider2D[] players = Physics2D.OverlapCircleAll(attackPos.position, attackRange, player);
-            for (int i = 0; i < players.Length; i++)
-            {
-                players[i].GetComponent<Health>().TakeEnemyDamage(attackdamage);
-                Debug.Log("attack");
-
-            }
+            
         }    
     }
     private void OnDrawGizmosSelected()

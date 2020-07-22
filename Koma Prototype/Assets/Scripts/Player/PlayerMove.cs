@@ -13,9 +13,9 @@ public class PlayerMove : MonoBehaviour
     public float horizontalMove;
 
     //анимация ходьбы и бега
-    /*public Animator anim;
+    public Animator anim;
     public bool isRunning = false;
-    public bool isWalking = false;*/
+    public bool isWalking = false;
 
     void Start()
     {
@@ -35,13 +35,67 @@ public class PlayerMove : MonoBehaviour
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
     }
-
+    public void Update()
+    {
+        if (isWalking == false)
+        {
+        anim.SetBool("Idle", true);
+        }
+        else
+        {
+            anim.SetBool("Idle", false);
+        }
+        //----------------------
+        if (isWalking == true)
+        {
+            anim.SetBool("isWalking", true);
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+        }
+        //----------------------
+        if (isRunning == true)
+        {
+            anim.SetBool("isRunning", true);
+        }
+        else
+        {
+            anim.SetBool("isRunning", false);
+        }
+    }
     void Move()
     {
+
+        
         if (Input.GetKey(KeyCode.LeftShift))
+        {
             speed = runSpeed;
+            if (horizontalMove != 0)
+            {
+                isRunning = true;
+                isWalking = false;
+            }
+            else
+            {
+                isWalking = false;
+                isRunning = false;
+            }
+        }
         else
+        {
             speed = walkSpeed;
+            if (horizontalMove != 0)
+            {
+                isWalking = true;
+                isRunning = false;
+            }
+            else
+            {
+                isWalking = false;
+                isRunning = false;
+            }
+        }
 
         horizontalMove = Input.GetAxis("Horizontal");
         hero.velocity = new Vector2(horizontalMove * speed, hero.velocity.y);
