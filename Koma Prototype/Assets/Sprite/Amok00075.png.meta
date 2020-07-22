@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: a36a6db417c418f4b919ae1b1f8b0334
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6377844621636768972
+    second: Amok00075_0
+  - first:
+      213: 4566077096415930344
+    second: Amok00075_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +115,49 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Amok00075_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 477
+        width: 681
+        height: 221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b64be9b185d77a0800000000000000
+      internalID: -6377844621636768972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Amok00075_1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 133
+        width: 580
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e72be45de6fd5f30800000000000000
+      internalID: 4566077096415930344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
