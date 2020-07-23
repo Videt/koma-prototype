@@ -1,43 +1,133 @@
 fileFormatVersion: 2
-guid: 74933ba6ce8ca82409569f73c98fccf1
+guid: 0e57ea0d4e99ea34c913a9b1f4d16c2e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4360126868517115665
-    second: forestBlur_0
+      213: 8960278200517875464
+    second: attack2_0
   - first:
-      213: -1988115381946291450
-    second: forestBlur_1
+      213: -2465810860969379800
+    second: attack2_1
   - first:
-      213: -7231343630095675739
-    second: forestBlur_2
+      213: 5002756131240677261
+    second: attack2_2
   - first:
-      213: -4704686814891357886
-    second: forestBlur_3
+      213: -3764604929125962900
+    second: attack2_3
   - first:
-      213: -5602992816416400042
-    second: forestBlur_4
+      213: 5997235080567257955
+    second: attack2_4
   - first:
-      213: 1421310240608133120
-    second: forestBlur_5
+      213: 1118178883266758183
+    second: attack2_5
   - first:
-      213: -2582388363519469210
-    second: forestBlur_6
+      213: 4375527575771685114
+    second: attack2_6
   - first:
-      213: 3057788483335539726
-    second: forestBlur_7
+      213: -47836001822693131
+    second: attack2_7
   - first:
-      213: -6105257757677861400
-    second: forestBlur_8
+      213: -5006914002284409324
+    second: attack2_8
   - first:
-      213: 746192013357456330
-    second: forestBlur_9
+      213: 4818371918333672716
+    second: attack2_9
   - first:
-      213: 7814381709045293178
-    second: forestBlur_10
+      213: 7349703736009592938
+    second: attack2_10
   - first:
-      213: -6753570890648239080
-    second: forestBlur_11
+      213: 7897007326269470006
+    second: attack2_11
+  - first:
+      213: 3546899277706344861
+    second: attack2_12
+  - first:
+      213: 3404559316335041068
+    second: attack2_13
+  - first:
+      213: -3085586742092536919
+    second: attack2_14
+  - first:
+      213: 529350200360652149
+    second: attack2_15
+  - first:
+      213: -6407345795641083186
+    second: attack2_16
+  - first:
+      213: 8128577087835474335
+    second: attack2_17
+  - first:
+      213: 3388321471743658438
+    second: attack2_18
+  - first:
+      213: -1373983342756087650
+    second: attack2_19
+  - first:
+      213: -724106961184138799
+    second: attack2_20
+  - first:
+      213: 5502310619759235725
+    second: attack2_21
+  - first:
+      213: -1560000461162224091
+    second: attack2_22
+  - first:
+      213: -5857474597501581907
+    second: attack2_23
+  - first:
+      213: 5611266007970651507
+    second: attack2_24
+  - first:
+      213: -2107683236688485224
+    second: attack2_25
+  - first:
+      213: 5945101626041334105
+    second: attack2_26
+  - first:
+      213: 9024171775981450563
+    second: attack2_27
+  - first:
+      213: -5770401990249816495
+    second: attack2_28
+  - first:
+      213: 5706793357365440767
+    second: attack2_29
+  - first:
+      213: -6453511409761839285
+    second: attack2_30
+  - first:
+      213: 8156914599239896133
+    second: attack2_0
+  - first:
+      213: -7017120174178367831
+    second: attack2_1
+  - first:
+      213: 8375898836925194684
+    second: attack2_2
+  - first:
+      213: -4837263532322544549
+    second: attack2_3
+  - first:
+      213: -2555356137992600590
+    second: attack2_4
+  - first:
+      213: -7141863693232848654
+    second: attack2_5
+  - first:
+      213: 6296870666224192698
+    second: attack2_6
+  - first:
+      213: -2179551955691596393
+    second: attack2_7
+  - first:
+      213: -7942906532368961146
+    second: attack2_8
+  - first:
+      213: 9030697161340628841
+    second: attack2_9
+  - first:
+      213: 5247013396683936845
+    second: attack2_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -147,13 +237,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: forestBlur_0
+      name: attack2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1056
-        height: 3000
+        y: 280
+        width: 234
+        height: 231
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +251,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe8a66ac6b7bd73c0800000000000000
-      internalID: -4360126868517115665
+      spriteID: 54c44ee5c9e233170800000000000000
+      internalID: 8156914599239896133
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forestBlur_1
+      name: attack2_1
       rect:
         serializedVersion: 2
-        x: 1046
-        y: 1945
-        width: 1289
-        height: 1055
+        x: 6
+        y: 205
+        width: 167
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +272,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60be996f79bc864e0800000000000000
-      internalID: -1988115381946291450
+      spriteID: 9a60fdf316e2e9e90800000000000000
+      internalID: -7017120174178367831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forestBlur_2
+      name: attack2_2
       rect:
         serializedVersion: 2
-        x: 2205
-        y: 2373
-        width: 795
-        height: 627
+        x: 25
+        y: 136
+        width: 157
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,104 +293,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ae0d5f184b15ab90800000000000000
-      internalID: -7231343630095675739
+      spriteID: cb1a8816d9b2d3470800000000000000
+      internalID: 8375898836925194684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forestBlur_3
+      name: attack2_3
       rect:
         serializedVersion: 2
-        x: 2260
-        y: 0
-        width: 705
-        height: 2402
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 249cfe2b44895beb0800000000000000
-      internalID: -4704686814891357886
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: forestBlur_4
-      rect:
-        serializedVersion: 2
-        x: 946
-        y: 2090
-        width: 154
-        height: 281
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65d5f6a28bb2e32b0800000000000000
-      internalID: -5602992816416400042
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: forestBlur_5
-      rect:
-        serializedVersion: 2
-        x: 1411
-        y: 1890
-        width: 162
-        height: 262
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 000a217222289b310800000000000000
-      internalID: 1421310240608133120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: forestBlur_6
-      rect:
-        serializedVersion: 2
-        x: 1707
-        y: 1674
-        width: 473
-        height: 253
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 669d1582773892cd0800000000000000
-      internalID: -2582388363519469210
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: forestBlur_7
-      rect:
-        serializedVersion: 2
-        x: 527
+        x: 19
         y: 10
-        width: 539
-        height: 517
+        width: 199
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,20 +314,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e0cce7bbc627f6a20800000000000000
-      internalID: 3057788483335539726
+      spriteID: b54a6fe32769edcb0800000000000000
+      internalID: -4837263532322544549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forestBlur_8
+      name: attack2_4
       rect:
         serializedVersion: 2
-        x: 1083
-        y: 0
-        width: 845
-        height: 1602
+        x: 269
+        y: 67
+        width: 161
+        height: 157
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -329,20 +335,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e5c96b9a64c54ba0800000000000000
-      internalID: -6105257757677861400
+      spriteID: 2f34650a12d898cd0800000000000000
+      internalID: -2555356137992600590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forestBlur_9
+      name: attack2_5
       rect:
         serializedVersion: 2
-        x: 1937
-        y: 16
-        width: 205
-        height: 1601
+        x: 261
+        y: 246
+        width: 128
+        height: 123
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,20 +356,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acb9762cea10b5a00800000000000000
-      internalID: 746192013357456330
+      spriteID: 2f0c89a6fc003ec90800000000000000
+      internalID: -7141863693232848654
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forestBlur_10
+      name: attack2_6
       rect:
         serializedVersion: 2
-        x: 2131
-        y: 0
-        width: 224
-        height: 1591
+        x: 235
+        y: 332
+        width: 61
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,20 +377,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7064f213c2427c60800000000000000
-      internalID: 7814381709045293178
+      spriteID: abcced8328af26750800000000000000
+      internalID: 6296870666224192698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: forestBlur_11
+      name: attack2_7
       rect:
         serializedVersion: 2
-        x: 2643
-        y: 21
-        width: 357
-        height: 1602
+        x: 323
+        y: 401
+        width: 40
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,8 +398,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8144e719e0f7642a0800000000000000
-      internalID: -6753570890648239080
+      spriteID: 7959e774b0da0c1e0800000000000000
+      internalID: -2179551955691596393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_8
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 419
+        width: 43
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681b406979025c190800000000000000
+      internalID: -7942906532368961146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_9
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 440
+        width: 129
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96f26d7b83b735d70800000000000000
+      internalID: 9030697161340628841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack2_10
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 273
+        width: 79
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44df0962e221d840800000000000000
+      internalID: 5247013396683936845
       vertices: []
       indices: 
       edges: []
