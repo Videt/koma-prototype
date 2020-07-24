@@ -37,9 +37,9 @@ public class PlayerMove : MonoBehaviour
     }
     public void Update()
     {
-        if (isWalking == false)
+        if (isWalking == false && isRunning == false)
         {
-        anim.SetBool("Idle", true);
+            anim.SetBool("Idle", true);
         }
         else
         {
