@@ -11,12 +11,13 @@ public class PlayerMove : MonoBehaviour
     public float walkSpeed = 10f;
     public float runSpeed = 100f;
     public float horizontalMove;
-
+    // проверка стоит ли перс на земле
+    public bool isGrounded;
     //анимация ходьбы и бега
     public Animator anim;
     public bool isRunning = false;
     public bool isWalking = false;
-
+    public bool faceright = true;
     void Start()
     {
         hero = GetComponent<Rigidbody2D>();
@@ -29,10 +30,12 @@ public class PlayerMove : MonoBehaviour
         if (horizontalMove < 0)
         {
             transform.localRotation = Quaternion.Euler(0, 180, 0);
+            faceright = false;
         }
         else if (horizontalMove > 0)
         {
             transform.localRotation = Quaternion.Euler(0, 0, 0);
+            faceright = true;
         }
     }
     public void Update()

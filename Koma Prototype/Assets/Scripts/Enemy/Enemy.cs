@@ -19,6 +19,8 @@ public class Enemy : MonoBehaviour
     public float timer = 2f;
     public float canmovetime = 2f; // как долго будет стоять после атаки
     public int attackdamage;
+
+
     
     void Start()
     {
@@ -55,6 +57,7 @@ public class Enemy : MonoBehaviour
         if (target.transform.position.x < transform.position.x)
         {
             transform.localRotation = Quaternion.Euler(0, 180, 0);
+
         }
         else
         {
@@ -76,10 +79,11 @@ public class Enemy : MonoBehaviour
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
 
     }
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, bool FaceRight)
     {
         health -= damage;
+        rb.AddForce(transform.up * 1900 + transform.right * 800*-1);
        
     }
-
+ 
 }

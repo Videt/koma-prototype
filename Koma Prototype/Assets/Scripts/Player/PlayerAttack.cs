@@ -7,18 +7,22 @@ public class PlayerAttack : MonoBehaviour
 {
     private float timeBtwAttack;
     public float startTimeBtwAttack;
-
+    public GameObject FrontPos;
+    public GameObject BackPos;
     public Transform attackPos;
     public Transform jumpAttackPos;
     public LayerMask enemy;
     public float attackRange;
     public int damage = 1;
-    public PlayerMovement playerMovement;
+    public PlayerMove playerMovement;
     public Animator anim;
+   
+
 
     PlayerControls controls;
     void Awake()
-    {
+    {        
+        Collider col = GetComponent<Collider>();
         controls = new PlayerControls();
         controls.Gameplay.Attack.performed += ctx => OnAttack();
         controls.Gameplay.PowerfulAttack.performed += ctx => OnPowerfulAttack();
@@ -55,16 +59,19 @@ public class PlayerAttack : MonoBehaviour
                 anim.SetTrigger("JumpAttack");
                 timeBtwAttack = startTimeBtwAttack*0.5f;
             }
-        }     
+        }                                   
     }
     public void RealeaseDamage()
     {
+
         Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemy);
         for (int i = 0; i < enemies.Length; i++)
         {
-            enemies[i].GetComponent<Enemy>().TakeDamage(damage);
-            Debug.Log("attack");
+            enemies[i].GetComponent<Enemy>().TakeDamage(damage, playerMovement.faceright);
+            Enemy enemyScript = enemies[i].GetComponent<Enemy>();
+
         }
+        
     }
     private void OnPowerfulAttack()
     {
@@ -79,8 +86,9 @@ public class PlayerAttack : MonoBehaviour
         Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemy);
         for (int i = 0; i < enemies.Length; i++)
         {
-            enemies[i].GetComponent<Enemy>().TakeDamage(damage * 2);
+            /*enemies[i].GetComponent<Enemy>().TakeDamage(damage * 2);
             Debug.Log("Powerfulattack");
+            */
         }
     }
     public void ReleaseJumpDamage()
@@ -88,8 +96,10 @@ public class PlayerAttack : MonoBehaviour
         Collider2D[] enemies = Physics2D.OverlapCircleAll(jumpAttackPos.position, attackRange, enemy);
         for (int i = 0; i < enemies.Length; i++)
         {
+           /*
             enemies[i].GetComponent<Enemy>().TakeDamage(damage);
             Debug.Log("JumpAttack");
+           */
         }
     }
 }
