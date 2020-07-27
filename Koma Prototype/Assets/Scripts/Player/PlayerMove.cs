@@ -7,12 +7,12 @@ public class PlayerMove : MonoBehaviour
     Rigidbody2D hero;
 
     //ходьба и бег
+
     public float speed = 0f;
     public float walkSpeed = 10f;
     public float runSpeed = 100f;
     public float horizontalMove;
     // проверка стоит ли перс на земле
-    public bool isGrounded;
     //анимация ходьбы и бега
     public Animator anim;
     public bool isRunning = false;
@@ -25,6 +25,7 @@ public class PlayerMove : MonoBehaviour
 
     void FixedUpdate()
     {
+        
         Move();
 
         if (horizontalMove < 0)
@@ -66,6 +67,7 @@ public class PlayerMove : MonoBehaviour
         {
             anim.SetBool("isRunning", false);
         }
+       
     }
     void Move()
     {

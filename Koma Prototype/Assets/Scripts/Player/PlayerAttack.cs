@@ -15,6 +15,7 @@ public class PlayerAttack : MonoBehaviour
     public float attackRange;
     public int damage = 1;
     public PlayerMove playerMovement;
+    public PlayerJump playerJump;
     public Animator anim;
    
 
@@ -46,21 +47,7 @@ public class PlayerAttack : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(jumpAttackPos.position, attackRange);
     }
-    private void OnAttack()
-    {
-        if (timeBtwAttack <= 0 )
-        { if (playerMovement.isGrounded == true)
-            {
-                anim.SetTrigger("Attack");
-                timeBtwAttack = startTimeBtwAttack;
-            }
-        else
-            {
-                anim.SetTrigger("JumpAttack");
-                timeBtwAttack = startTimeBtwAttack*0.5f;
-            }
-        }                                   
-    }
+    
     public void RealeaseDamage()
     {
 
@@ -73,12 +60,37 @@ public class PlayerAttack : MonoBehaviour
         }
         
     }
-    private void OnPowerfulAttack()
+    private void OnAttack()
     {
-        if (timeBtwAttack <= 0)
+        if (playerMovement.isRunning == false)
         {
-            anim.SetTrigger("PowerfulAttack");
-            timeBtwAttack = 2 * startTimeBtwAttack;
+
+            if (playerMovement.isWalking == true)
+            {
+                anim.SetTrigger("RunAttack");
+            }
+            else
+            {
+                    anim.SetTrigger("Attack");
+                    timeBtwAttack = startTimeBtwAttack;
+            }
+        }
+    }
+    private void OnPowerfulAttack()
+    {   if (playerMovement.isRunning == false)
+        {
+            if (playerMovement.isWalking == true)
+            {
+                anim.SetTrigger("RunAttack");
+            }
+            else
+            {
+                if (timeBtwAttack <= 0)
+                {
+                    anim.SetTrigger("PowerfulAttack");
+                    timeBtwAttack = 2 * startTimeBtwAttack;
+                }
+            }
         }
     }
     public void ReleasePowerfulDamage()
@@ -86,9 +98,9 @@ public class PlayerAttack : MonoBehaviour
         Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemy);
         for (int i = 0; i < enemies.Length; i++)
         {
-            /*enemies[i].GetComponent<Enemy>().TakeDamage(damage * 2);
-            Debug.Log("Powerfulattack");
-            */
+            enemies[i].GetComponent<Enemy>().TakeDamage(damage*2, playerMovement.faceright);
+            Enemy enemyScript = enemies[i].GetComponent<Enemy>();
+
         }
     }
     public void ReleaseJumpDamage()
@@ -96,10 +108,9 @@ public class PlayerAttack : MonoBehaviour
         Collider2D[] enemies = Physics2D.OverlapCircleAll(jumpAttackPos.position, attackRange, enemy);
         for (int i = 0; i < enemies.Length; i++)
         {
-           /*
-            enemies[i].GetComponent<Enemy>().TakeDamage(damage);
-            Debug.Log("JumpAttack");
-           */
+            enemies[i].GetComponent<Enemy>().TakeDamage(damage, playerMovement.faceright);
+            Enemy enemyScript = enemies[i].GetComponent<Enemy>();
+
         }
     }
 }
