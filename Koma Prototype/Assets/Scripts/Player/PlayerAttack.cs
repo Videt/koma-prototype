@@ -8,7 +8,6 @@ public class PlayerAttack : MonoBehaviour
     private float timeBtwAttack;
     public float startTimeBtwAttack;
     public GameObject FrontPos;
-    public GameObject BackPos;
     public Transform attackPos;
     public Transform jumpAttackPos;
     public LayerMask enemy;
@@ -62,12 +61,13 @@ public class PlayerAttack : MonoBehaviour
     }
     private void OnAttack()
     {
-        if (playerMovement.isRunning == false)
+        if (playerMovement.isRunning == false && timeBtwAttack <=0)
         {
 
             if (playerMovement.isWalking == true)
             {
                 anim.SetTrigger("RunAttack");
+                timeBtwAttack = startTimeBtwAttack;
             }
             else
             {
@@ -77,7 +77,7 @@ public class PlayerAttack : MonoBehaviour
         }
     }
     private void OnPowerfulAttack()
-    {   if (playerMovement.isRunning == false)
+    {   if (playerMovement.isRunning == false && timeBtwAttack <=0)
         {
             if (playerMovement.isWalking == true)
             {

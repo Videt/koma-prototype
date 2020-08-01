@@ -5,13 +5,13 @@ using UnityEngine;
 public class Patrul : MonoBehaviour
 {
     public GameObject enemy;
-    public GameObject player;
-    public float speed;
-    public float waitTime;
+    public GameObject player; // тут скрипт получит доступ к игроку
+    public float speed;  //  скорость хотьбы
+    private float waitTime;
     public float startWaitTime;
-    public float distance;
-    public Transform[] moveSpots;
-    private int randomSpot;
+    public float distance; 
+    public Transform[] moveSpots;   //массив с точками по которым надо ходить
+    private int randomSpot;  
 
     void Start()
     {
@@ -25,11 +25,11 @@ public class Patrul : MonoBehaviour
     void Update()
     {
       
-        if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) >= 2f)
+        if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) >= 2f)// движение к точке
         {
             transform.Translate(Vector2.right * Time.deltaTime * speed);
         }
-        if (moveSpots[randomSpot].transform.position.x < transform.position.x)
+        if (moveSpots[randomSpot].transform.position.x < transform.position.x) //поворот в сторону точки
         {
             transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
@@ -37,7 +37,7 @@ public class Patrul : MonoBehaviour
         {
             transform.localRotation = Quaternion.Euler(0, 0, 0);
         }
-        if  (Vector2.Distance(transform.position, moveSpots[randomSpot].position)<=2f)
+        if  (Vector2.Distance(transform.position, moveSpots[randomSpot].position)<=2f) //оставновка, если на допустимом расстоянии
         {
             if (waitTime <= 0)
             {
