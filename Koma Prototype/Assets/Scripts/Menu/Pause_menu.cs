@@ -32,12 +32,6 @@ public class Pause_menu : MonoBehaviour
      
         
     }
-   
-    public void BackFormUpgrade()
-    {
-        pauseMenuUI.SetActive(true);
-      
-    }
     public void Options() //открыть опции
     {
         options.SetActive(true);
@@ -64,7 +58,6 @@ public class Pause_menu : MonoBehaviour
     }
     public void QuitGame() //выход из игры
     {
-      
         Application.Quit();
     }
 
