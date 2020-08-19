@@ -6,10 +6,10 @@ public class PlayerJump : MonoBehaviour
 {
     Rigidbody2D hero;
 
-    public float jumpForce = 1000f;
+    public float jumpForce = 2000f;
     public bool isJumping;
     public bool isGrounded = false;
-    float groundRadius = 0.2f;
+    float groundRadius = 0.5f;
     public Transform groundCheck;
     public LayerMask whatIsGround;
 
