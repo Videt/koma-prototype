@@ -9,8 +9,6 @@ TagManager:
   - Checkpoint
   - GameMaster
   - Wall
-  - Lamp
-  - Object
   layers:
   - Default
   - TransparentFX
@@ -26,7 +24,7 @@ TagManager:
   - BG
   - BGup
   - Wall
-  - Object
+  - 
   - 
   - 
   - 
