@@ -71,8 +71,6 @@ public class PlayerMove : MonoBehaviour
     }
     void Move()
     {
-
-        
         if (Input.GetKey(KeyCode.LeftShift))
         {
             speed = runSpeed;
