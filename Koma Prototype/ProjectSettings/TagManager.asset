@@ -11,6 +11,8 @@ TagManager:
   - Wall
   - Lamp
   - Object
+  - ZoomMin
+  - ZoomMax
   layers:
   - Default
   - TransparentFX
