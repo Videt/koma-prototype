@@ -84,7 +84,7 @@ public class Event_Contoller : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("ZoomMin"))
         {
-            Camera.GetComponent<Camera>().orthographicSize = Mathf.Clamp(Camera.GetComponent<Camera>().orthographicSize-1, minZoom, maxZoom);
+            Camera.GetComponent<Camera>().orthographicSize = Mathf.Clamp(Camera.GetComponent<Camera>().orthographicSize, minZoom, maxZoom);
         }
         if (collision.gameObject.CompareTag("ZoomMax"))
         {
