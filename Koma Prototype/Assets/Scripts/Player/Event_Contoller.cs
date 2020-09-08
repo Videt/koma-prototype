@@ -13,6 +13,10 @@ public class Event_Contoller : MonoBehaviour
     RaycastHit2D hit;
     public Transform holdPoint;
     public float ThrowObj;
+    public GameObject Camera;
+    public float minZoom;
+    public float maxZoom;
+    public int CamZoom;
     void Start()
     {
 
@@ -77,6 +81,14 @@ public class Event_Contoller : MonoBehaviour
         {
             Icon.SetActive(true);
             lamp = collision.GetComponent<LampLight>();
+        }
+        if (collision.gameObject.CompareTag("ZoomMin"))
+        {
+            Camera.GetComponent<Camera>().orthographicSize = Mathf.Clamp(Camera.GetComponent<Camera>().orthographicSize-1, minZoom, maxZoom);
+        }
+        if (collision.gameObject.CompareTag("ZoomMax"))
+        {
+            Camera.GetComponent<Camera>().orthographicSize = Mathf.Clamp(Camera.GetComponent<Camera>().orthographicSize + 1, minZoom, maxZoom);
         }
     }
     public void OnTriggerStay2D(Collider2D other)
