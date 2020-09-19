@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 public class Event_Controller : MonoBehaviour
-{   public UnityEvent MyEvent;
+{
+    public UnityEvent EventOnEnter;
+    public UnityEvent EventOnClick;
+    public KeyCode EventKey;
+
 
     
     void Start()
@@ -11,11 +15,22 @@ public class Event_Controller : MonoBehaviour
 
     }
 
-    public void OnTriggerEnter2D(Collider2D col)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (col.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
-            MyEvent.Invoke();
+            EventOnEnter.Invoke();         
+        }
+    }
+    public void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            if (Input.GetKeyDown(EventKey))
+            {
+                EventOnClick.Invoke();
+                Debug.Log("LLOLL");
+            }
         }
     }
     void Update()
