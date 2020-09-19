@@ -4,24 +4,31 @@ using UnityEngine;
 
 public class Camer_Zoom : MonoBehaviour
 {
-    public float smoothTime;
     private Camera camera;
-    public float speed; //забей, не трошь
-    private bool isZoomed;
+    private float speed;
+    public float smooth;//величина, на которую меняется каждый кадр
+    private bool isZoomed;//переключатель
+    public float zoomMax;//величина увеличения
     public void OnEnable()
     {
         camera = GetComponent<Camera>();
     }
 
 
-    public void Zoom(float zoomDump) // то к чему стремится
+    public void Zoom(float _zoom) // то к чему стремится
     {
-        camera.orthographicSize = Mathf.SmoothDamp(camera.orthographicSize, zoomDump, ref speed, smoothTime);
-        
-        
+        isZoomed = true;
+        zoomMax = _zoom;
     }
     public void FixedUpdate()
     {
-        Zoom(20);
+        if (isZoomed)
+        {
+            camera.orthographicSize = Mathf.SmoothDamp(camera.orthographicSize, zoomMax, ref speed, smooth);
+        }
+        if (System.Math.Round(camera.orthographicSize,2) == zoomMax)
+        {
+            isZoomed = false;
+        }
     }
 }
