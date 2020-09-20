@@ -29,7 +29,6 @@ public class Event_Controller : MonoBehaviour
             if (Input.GetKeyDown(EventKey))
             {
                 EventOnClick.Invoke();
-                Debug.Log("LLOLL");
             }
         }
     }
