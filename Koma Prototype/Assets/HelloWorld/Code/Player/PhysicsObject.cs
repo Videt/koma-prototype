@@ -16,6 +16,7 @@ public class PhysicsObject : MonoBehaviour
     protected List<RaycastHit2D> hitBufferList = new List<RaycastHit2D>(16);
     protected const float shellRadius = 0.01f;
     protected Vector2 targetVelocity;
+    Animator anim;
     private void OnEnable()
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
@@ -26,6 +27,7 @@ public class PhysicsObject : MonoBehaviour
         contactFilter2D.useTriggers = false;
         contactFilter2D.SetLayerMask(Physics2D.GetLayerCollisionMask(gameObject.layer));
         contactFilter2D.useLayerMask = true;
+        anim = GetComponent<Animator>();
     }
 
 
@@ -33,6 +35,7 @@ public class PhysicsObject : MonoBehaviour
     {
         targetVelocity = Vector2.zero;
         ComputeVelocity();
+        
     }
     protected virtual void ComputeVelocity()
     {
@@ -97,6 +100,6 @@ public class PhysicsObject : MonoBehaviour
         }
 
         playerRigidbody.position = playerRigidbody.position + move.normalized * distance;
-
+        
     }
 }

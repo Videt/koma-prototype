@@ -11,7 +11,7 @@ public class PlayerPlatformerController : PhysicsObject
     private SpriteRenderer spriteRenderer;
     public bool flipSprite;
     public bool run;
-  //  public bool run;
+    //  public bool run;
 
     void Start()
     {
