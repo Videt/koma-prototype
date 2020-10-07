@@ -9,6 +9,7 @@ public class Player_Attack : MonoBehaviour
     public float distance;
     public RaycastHit2D[] result = new RaycastHit2D[1];
     public LayerMask Enemy;
+    public Animator anim;
    
     void Start()
     {
@@ -35,7 +36,7 @@ public class Player_Attack : MonoBehaviour
         {
             Debug.Log(result[i].collider.name);
         }
-
+        anim.SetTrigger("Attack");
 
 
 
