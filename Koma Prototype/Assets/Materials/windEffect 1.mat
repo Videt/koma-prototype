@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: windEffect 3
+  m_Name: windEffect 1
   m_Shader: {fileID: -6465566751694194690, guid: e8c31e4f27f1392449fd738a21d3b960,
     type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
@@ -60,12 +60,13 @@ Material:
     - _Metallic: 0.58
     - _WindFrecuency: 37
     - _WindGustDistance: 1.9
+    - _WindIntensity: 0.4
     - _WindSpeed: 0.86
     - _WindStrength: 0.12
     - windSpeed: 1
     m_Colors:
     - Vector2_42DAA081: {r: 1, g: 0, b: 0, a: 0}
-    - Vector2_928D51AB: {r: 1.48, g: 1.18, b: 0, a: 0}
+    - Vector2_928D51AB: {r: 1, g: 4, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}

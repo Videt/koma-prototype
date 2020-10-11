@@ -1,0 +1,920 @@
+fileFormatVersion: 2
+guid: 0dd28282cec6acd4ca292e4040786b42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3584772520358595568
+    second: lingonberry_0
+  - first:
+      213: 6228406580621050254
+    second: lingonberry_1
+  - first:
+      213: -2040472480528296769
+    second: lingonberry_2
+  - first:
+      213: -4566165605309630590
+    second: lingonberry_3
+  - first:
+      213: -705077077969830150
+    second: lingonberry_4
+  - first:
+      213: -5025238783201816319
+    second: lingonberry_5
+  - first:
+      213: -5736861776385474655
+    second: lingonberry_6
+  - first:
+      213: -2668117748069165228
+    second: lingonberry_7
+  - first:
+      213: 8380604608169921337
+    second: lingonberry_8
+  - first:
+      213: -5032742860102133834
+    second: lingonberry_9
+  - first:
+      213: -8726858582185642675
+    second: lingonberry_10
+  - first:
+      213: 5587504981893982271
+    second: lingonberry_11
+  - first:
+      213: -3325306971655608798
+    second: lingonberry_12
+  - first:
+      213: 4557234925615994970
+    second: lingonberry_13
+  - first:
+      213: 4313425555384687919
+    second: lingonberry_14
+  - first:
+      213: 4378383360124234160
+    second: lingonberry_15
+  - first:
+      213: 661542083152413589
+    second: lingonberry_16
+  - first:
+      213: 2141247497914666616
+    second: lingonberry_17
+  - first:
+      213: 2007409407705214256
+    second: lingonberry_18
+  - first:
+      213: -8443652120869951855
+    second: lingonberry_19
+  - first:
+      213: 1838711886958365729
+    second: lingonberry_20
+  - first:
+      213: -5500117405094673859
+    second: lingonberry_21
+  - first:
+      213: -8517831491582486933
+    second: lingonberry_22
+  - first:
+      213: -2704066135852175068
+    second: lingonberry_23
+  - first:
+      213: 1689970370406379953
+    second: lingonberry_24
+  - first:
+      213: -6785687318660863398
+    second: lingonberry_25
+  - first:
+      213: -215052264934944882
+    second: lingonberry_26
+  - first:
+      213: -7471588260963942918
+    second: lingonberry_27
+  - first:
+      213: 4416439049459676522
+    second: lingonberry_28
+  - first:
+      213: -7368583523108604818
+    second: lingonberry_29
+  - first:
+      213: 4662761105676944083
+    second: lingonberry_30
+  - first:
+      213: 596807989686079046
+    second: lingonberry_31
+  - first:
+      213: -8618305667713597290
+    second: lingonberry_32
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lingonberry_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 22
+        width: 64
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 014b17bb264504ec0800000000000000
+      internalID: -3584772520358595568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_1
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 33
+        width: 36
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e818f9a19cebf6650800000000000000
+      internalID: 6228406580621050254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_2
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 34
+        width: 41
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb496200719cea3e0800000000000000
+      internalID: -2040472480528296769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_3
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 26
+        width: 82
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 287b9e51398b1a0c0800000000000000
+      internalID: -4566165605309630590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_4
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 132
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe765c12201736f0800000000000000
+      internalID: -705077077969830150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_5
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 46
+        width: 136
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1015db793f3c24ab0800000000000000
+      internalID: -5025238783201816319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_6
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 56
+        width: 72
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aff60d0c929260b0800000000000000
+      internalID: -5736861776385474655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_7
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 48
+        width: 47
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4571c6f5b01f8fad0800000000000000
+      internalID: -2668117748069165228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_8
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 37
+        width: 74
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93b48f02d73ed4470800000000000000
+      internalID: 8380604608169921337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_9
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 53
+        width: 91
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b79ab9880b182ab0800000000000000
+      internalID: -5032742860102133834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_10
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 38
+        width: 79
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4571cb3b58f3e680800000000000000
+      internalID: -8726858582185642675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_11
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 16
+        width: 98
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38248a5d2eca8d40800000000000000
+      internalID: 5587504981893982271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_12
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 39
+        width: 95
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22666517de22ad1d0800000000000000
+      internalID: -3325306971655608798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_13
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 39
+        width: 128
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a585853050d8e3f30800000000000000
+      internalID: 4557234925615994970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_14
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 53
+        width: 100
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ddbc960bd5cdb30800000000000000
+      internalID: 4313425555384687919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_15
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 48
+        width: 128
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9afa6e77423cc30800000000000000
+      internalID: 4378383360124234160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_16
+      rect:
+        serializedVersion: 2
+        x: 1710
+        y: 97
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 593854605054e2900800000000000000
+      internalID: 661542083152413589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_17
+      rect:
+        serializedVersion: 2
+        x: 1802
+        y: 122
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ec569214d37bd10800000000000000
+      internalID: 2141247497914666616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_18
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 102
+        width: 47
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03deb097830cbdb10800000000000000
+      internalID: 2007409407705214256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_19
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 118
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196a298e12f12da80800000000000000
+      internalID: -8443652120869951855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_20
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 124
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c017228ba648910800000000000000
+      internalID: 1838711886958365729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_21
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 132
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3283666c58aba3b0800000000000000
+      internalID: -5500117405094673859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_22
+      rect:
+        serializedVersion: 2
+        x: 2193
+        y: 134
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b66179743659ac980800000000000000
+      internalID: -8517831491582486933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_23
+      rect:
+        serializedVersion: 2
+        x: 2260
+        y: 91
+        width: 60
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4213e5b1d2a397ad0800000000000000
+      internalID: -2704066135852175068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_24
+      rect:
+        serializedVersion: 2
+        x: 2317
+        y: 84
+        width: 43
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1f109191bf37710800000000000000
+      internalID: 1689970370406379953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_25
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 45
+        width: 33
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5aa856f55564d1a0800000000000000
+      internalID: -6785687318660863398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_26
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 88
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8fc86cba1bf30df0800000000000000
+      internalID: -215052264934944882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_27
+      rect:
+        serializedVersion: 2
+        x: 1935
+        y: 67
+        width: 56
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdf34510169f4890800000000000000
+      internalID: -7471588260963942918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_28
+      rect:
+        serializedVersion: 2
+        x: 2010
+        y: 84
+        width: 39
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65353b8ae75a4d30800000000000000
+      internalID: 4416439049459676522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_29
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 73
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e64b05f73588db990800000000000000
+      internalID: -7368583523108604818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_30
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 75
+        width: 50
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2c160758475b040800000000000000
+      internalID: 4662761105676944083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_31
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 21
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e8a5064b9484800800000000000000
+      internalID: 596807989686079046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lingonberry_32
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 15
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690023e28a0a56880800000000000000
+      internalID: -8618305667713597290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

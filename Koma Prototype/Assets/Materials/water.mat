@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: water
+  m_Shader: {fileID: -6465566751694194690, guid: ce17bc5b26bcc704d9ee3bad69231694,
+    type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_8969F667:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_BE9ECEDC:
+        m_Texture: {fileID: 2800000, guid: 61f4e459b1cd5d74c92e4ad6edae4b0b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_EBB1DE07:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MineTex:
+        m_Texture: {fileID: 8400000, guid: 9cbfd4dc2a094bb458c69683d3eb499c, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleCubemap_AA88ABF4_Cube_1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_2E38ACEB: 0.3
+    - Vector1_39639BD9: 8.07
+    - Vector1_6B638863: 0.64
+    - Vector1_7EBB7FBE: 2
+    - Vector1_9FAC1222: 0
+    - Vector1_AF110205: 0.21
+    - Vector1_B720C61D: 2.6
+    - Vector1_C6C24E8F: 1
+    - Vector1_F3925083: 1
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - Color_753CA0: {r: 0.8369031, g: 1, b: 0.8254717, a: 0}
+    - Color_A6C4CEF5: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 0}
+    - Vector2_4A7D514B: {r: 1, g: 2, b: 0, a: 0}
+    - Vector2_9CDAD8EE: {r: 1, g: 1, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
