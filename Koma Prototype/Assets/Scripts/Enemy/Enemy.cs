@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     private Transform target;
     Rigidbody2D rb;
     public LayerMask player;
-    public float radius;
+    public float attackRange;
     public float health=2;
     public float speed;
     public float stoppingdistance;     //дистанция где надо останавливаться
@@ -19,11 +19,9 @@ public class Enemy : MonoBehaviour
     public float timer = 2f;
     public float canmovetime = 2f; // как долго будет стоять после атаки
     public int attackdamage;
-    public LayerMask Player;
-    public RaycastHit2D[] result = new RaycastHit2D[1];
-    public float distance;
 
 
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -72,15 +70,15 @@ public class Enemy : MonoBehaviour
         {
             anim.SetTrigger("Attack");
             timeBtwAttack = startTimeBtwAttack;
-            result = Physics2D.CircleCastAll(attackPos.position, radius, attackPos.forward, distance, Player);
-
-            for (int i = 0; i < result.Length; i++)
-            {
-                Debug.Log(result[i].collider.name);
-            }
+            
         }    
     }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPos.position, attackRange);
 
+    }
     public void TakeDamage(int damage, bool FaceRight)
     {
         health -= damage;
