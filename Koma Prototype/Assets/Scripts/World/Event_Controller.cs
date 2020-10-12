@@ -8,7 +8,7 @@ public class Event_Controller : MonoBehaviour
     
     void Start()
     {
-
+        
     }
 
     public void OnTriggerEnter2D(Collider2D col)
