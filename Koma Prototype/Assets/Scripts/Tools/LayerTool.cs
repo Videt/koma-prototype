@@ -8,6 +8,11 @@ public class LayerTool : MonoBehaviour
 {
     public SpriteRenderer sp;
 
+    void Start()
+    {
+        
+    }
+
     void Update()
     {
         sp.sortingOrder = Mathf.FloorToInt(transform.position.z);
