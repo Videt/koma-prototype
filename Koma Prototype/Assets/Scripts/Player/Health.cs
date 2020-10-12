@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Health : MonoBehaviour
 {
     public int health = 5;
-    public int maxHealth = 9;
+    public int numberOfHearts = 10;
 
     public Image[] hearts;
     public Sprite fullHeart;
@@ -23,8 +23,8 @@ public class Health : MonoBehaviour
     }
     void Update()
     {
-        if (health > maxHealth)
-            health = maxHealth;
+        if (health > numberOfHearts)
+            health = numberOfHearts;
 
         for (int i = 0; i < hearts.Length; i++)
         {
@@ -33,7 +33,7 @@ public class Health : MonoBehaviour
             else
                 hearts[i].sprite = emptyHeart;
 
-            if (i < maxHealth)
+            if (i < numberOfHearts)
                 hearts[i].enabled = true;
             else
                 hearts[i].enabled = false;

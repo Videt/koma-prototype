@@ -17,7 +17,6 @@ public class Event_Contoller : MonoBehaviour
     public float minZoom;
     public float maxZoom;
     public int CamZoom;
-    public float Rand;
     void Start()
     {
 
@@ -31,7 +30,6 @@ public class Event_Contoller : MonoBehaviour
         timer -= Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.E))
         {
-          
             if (!hold)
             {
                 Physics2D.queriesStartInColliders = false;
@@ -72,23 +70,11 @@ public class Event_Contoller : MonoBehaviour
 
         }
     }
-    /*   private void OnDrawGizmos()
-       {
-           Gizmos.color = Color.red;
-           Gizmos.DrawLine(holdPoint.transform.position, holdPoint.transform.position + Vector3.right  * distance);
-       }*/
-    public void OnCollisionEnter2D(Collision2D collision)
+ /*   private void OnDrawGizmos()
     {
-        if (collision.gameObject.CompareTag("Enemy") && collision.gameObject.transform.position.y< transform.position.y)
-        {
-            Debug.Log("shit");
-            Rand = Random.Range(-1, 1);            
-            GetComponent<Rigidbody2D>().AddForce(transform.up * 100f, ForceMode2D.Impulse);
-            GetComponent<Rigidbody2D>().AddForce(Vector2.right * 1000f, ForceMode2D.Impulse);
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(transform.right* 600*Rand, ForceMode2D.Impulse);
-            //GetComponent<Rigidbody2D>().velocity = new Vector2(50f * 1, 10f);
-        }
-    }
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(holdPoint.transform.position, holdPoint.transform.position + Vector3.right  * distance);
+    }*/
     public void OnTriggerEnter2D (Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Lamp"))
