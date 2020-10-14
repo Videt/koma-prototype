@@ -8,8 +8,8 @@ public class Test_Movement : MonoBehaviour
     [Range(0, 500)]
     public int maxJumpSpeed = 100;
 
-    public int countJumps;
-    public int count;
+    public int maxJumps;
+    public int currentJump;
     public float groundDis;
 
     public LayerMask groundLayer;
@@ -36,19 +36,18 @@ public class Test_Movement : MonoBehaviour
 
         if (isGround)
         {
-            count = countJumps;
+            currentJump = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && (isGround || maxJumps > currentJump))
         {
-            if (isGround || (!isGround && count > 0))
-            {
+           
                 Vector2 playerVelocity = playerRigidbody2D.velocity;
                 Debug.Log("Jump");
-                count--;
+                currentJump++;
                 playerRigidbody2D.velocity = new Vector2(playerVelocity.x, maxJumpSpeed);
                 isGround = false;
-            }
+            
 
 
         }
