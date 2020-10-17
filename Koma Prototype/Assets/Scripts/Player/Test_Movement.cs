@@ -17,6 +17,8 @@ public class Test_Movement : MonoBehaviour
     public bool isGround;
     public Transform groundCheckPos;
 
+    public Vector2 Axis;
+
     private void OnEnable()
     {
         playerRigidbody2D = GetComponent<Rigidbody2D>();
@@ -27,11 +29,15 @@ public class Test_Movement : MonoBehaviour
     {
  
         Vector2 playerVelocity = playerRigidbody2D.velocity;
-        playerRigidbody2D.velocity = new Vector2(maxMovementSpeed * Input.GetAxis("Horizontal"), playerVelocity.y);
+        playerRigidbody2D.velocity = new Vector2(maxMovementSpeed * Axis.x, playerVelocity.y);
 
     }
     private void Update()
     {
+        Axis.x = Input.GetAxis("Horizontal");
+        Axis.y = Input.GetAxis("Vertical");
+
+        flip();
         isGround = Physics2D.OverlapCircle(groundCheckPos.position, groundDis,groundLayer);
 
         if (isGround)
@@ -40,16 +46,24 @@ public class Test_Movement : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && (isGround || maxJumps > currentJump))
-        {
-           
+        {    
                 Vector2 playerVelocity = playerRigidbody2D.velocity;
                 Debug.Log("Jump");
                 currentJump++;
                 playerRigidbody2D.velocity = new Vector2(playerVelocity.x, maxJumpSpeed);
-                isGround = false;
-            
+                isGround = false;          
+        }
+    }
 
-
+    void flip()
+    {
+        if (Axis.x < 0)
+        {
+            transform.localRotation = Quaternion.Euler(0, 180, 0);        
+        }
+        else if (Axis.x > 0)
+        {
+            transform.localRotation = Quaternion.Euler(0, 0, 0);        
         }
     }
 }
