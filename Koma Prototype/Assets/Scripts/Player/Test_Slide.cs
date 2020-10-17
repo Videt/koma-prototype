@@ -1,24 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Test_Slide : MonoBehaviour
 {
-    private Rigidbody2D playerRigidbody2d;
     public Transform checkWall;
     public float wallSlideSpeed = 2;
     public float checkWallDis;
     public LayerMask wallLayer;
-    private bool canSlide;
+    public float reloadGrabtime = 5;
+    public float maxStamina;
+    public float current_stamina;
+    public bool isGrab;
+    private Rigidbody2D playerRigidbody2d;
+    private bool canGrab;
     private bool collideWall;
     private float x, y;
-    public float canGrabtime = 5, reloadGrabtime = 5;
-
-    public float Ystalost;
+    //обображение параметров для разрабов
+    public Slider stamina_slider;
+    public Camera cam;
+    public Vector2 offcet;
 
     void OnEnable()
     {
-        canSlide = true;
+        canGrab = true;
         playerRigidbody2d = gameObject.GetComponent<Rigidbody2D>();
     }
 
@@ -27,39 +33,44 @@ public class Test_Slide : MonoBehaviour
     {
          x = Input.GetAxis("Horizontal");
          y = Input.GetAxis("Vertical");
+        DrawParameters();
+        collideWall = Physics2D.OverlapCircle(checkWall.position, checkWallDis, wallLayer); // Если коснулись стены то true
 
-        collideWall = Physics2D.OverlapCircle(checkWall.position, checkWallDis, wallLayer);
-        if (collideWall && canSlide)
+        if (collideWall && canGrab &&x != 0) // если коснулись стены и можем ползти
         {
-            Vector2 playerVelocity = playerRigidbody2d.velocity;
-            if (x != 0)
+            Vector2 playerVelocity = playerRigidbody2d.velocity; // записываем велосити игрока в отдельную переменную
+
+            if (x != 0) // если идем в бок
             {
-                if (Ystalost > canGrabtime)
+                if (current_stamina > maxStamina) // если стамина превышает максимальную стамину, мы устаём.
                 {
-                    StartCoroutine(GrabWall());
+                    StartCoroutine(ReloadGrab());
                     Debug.Log("Я устал!");
                 }
-                playerRigidbody2d.velocity = new Vector2(playerVelocity.x, wallSlideSpeed);
-                Ystalost += 1 * Time.deltaTime;
-            }
+                playerRigidbody2d.velocity = new Vector2(playerVelocity.x, wallSlideSpeed); // движение по стене
+                current_stamina += 1 * Time.deltaTime; // тратим силу на то чтобы ползти
+            }          
         }
         else
         {
-            if (Ystalost > 0)
+            if (current_stamina > 0) //отдых
             {
-                Ystalost -= 1 * Time.deltaTime;
+                current_stamina -= 1 * Time.deltaTime;
             }
         }
     }
-    IEnumerator GrabWall()
+  
+    IEnumerator ReloadGrab() // если устали то ждем.
     {
-        yield return new WaitForSeconds(canGrabtime);
-        canSlide = false;
-        StartCoroutine(ReloadGrab());
-    }
-    IEnumerator ReloadGrab()
-    {
+        canGrab = false;
         yield return new WaitForSeconds(reloadGrabtime);
-        canSlide = true;
+        canGrab = true;
+    }
+    void DrawParameters()
+    {    
+        stamina_slider.maxValue = maxStamina;
+        stamina_slider.value = current_stamina;
+        Vector2 pos = cam.WorldToScreenPoint(transform.position);
+        stamina_slider.GetComponent<RectTransform>().position =( pos+ offcet);
     }
 }

@@ -17,7 +17,7 @@ public class Test_Movement : MonoBehaviour
     public bool isGround;
     public Transform groundCheckPos;
 
-    public Vector2 Axis;
+    public Vector2 axis;
 
     private void OnEnable()
     {
@@ -29,13 +29,13 @@ public class Test_Movement : MonoBehaviour
     {
  
         Vector2 playerVelocity = playerRigidbody2D.velocity;
-        playerRigidbody2D.velocity = new Vector2(maxMovementSpeed * Axis.x, playerVelocity.y);
+        playerRigidbody2D.velocity = new Vector2(maxMovementSpeed * axis.x, playerVelocity.y);
 
     }
     private void Update()
     {
-        Axis.x = Input.GetAxis("Horizontal");
-        Axis.y = Input.GetAxis("Vertical");
+        axis.x = Input.GetAxis("Horizontal");
+        axis.y = Input.GetAxis("Vertical");
 
         flip();
         isGround = Physics2D.OverlapCircle(groundCheckPos.position, groundDis,groundLayer);
@@ -57,11 +57,11 @@ public class Test_Movement : MonoBehaviour
 
     void flip()
     {
-        if (Axis.x < 0)
+        if (axis.x < 0)
         {
             transform.localRotation = Quaternion.Euler(0, 180, 0);        
         }
-        else if (Axis.x > 0)
+        else if (axis.x > 0)
         {
             transform.localRotation = Quaternion.Euler(0, 0, 0);        
         }
