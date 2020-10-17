@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using Puppet2D;
 public class Test_Movement : MonoBehaviour
 {
     private Rigidbody2D playerRigidbody2D;
@@ -18,6 +18,7 @@ public class Test_Movement : MonoBehaviour
     public Transform groundCheckPos;
 
     public Vector2 axis;
+    public Puppet2D_GlobalControl puppet2d;
 
     private void OnEnable()
     {
@@ -59,11 +60,11 @@ public class Test_Movement : MonoBehaviour
     {
         if (axis.x < 0)
         {
-            transform.localRotation = Quaternion.Euler(0, 180, 0);        
+            puppet2d.flip = true;
         }
         else if (axis.x > 0)
         {
-            transform.localRotation = Quaternion.Euler(0, 0, 0);        
+            puppet2d.flip = false;
         }
     }
 }

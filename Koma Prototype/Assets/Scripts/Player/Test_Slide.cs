@@ -14,7 +14,7 @@ public class Test_Slide : MonoBehaviour
     public float current_stamina;
     public bool isGrab;
     private Rigidbody2D playerRigidbody2d;
-    private bool canGrab;
+    public bool canGrab;
     private bool collideWall;
     private float x, y;
     //обображение параметров для разрабов
@@ -38,6 +38,7 @@ public class Test_Slide : MonoBehaviour
 
         if (collideWall && canGrab &&x != 0) // если коснулись стены и можем ползти
         {
+            isGrab = true;
             Vector2 playerVelocity = playerRigidbody2d.velocity; // записываем велосити игрока в отдельную переменную
 
             if (x != 0) // если идем в бок
@@ -53,6 +54,7 @@ public class Test_Slide : MonoBehaviour
         }
         else
         {
+            isGrab = false;
             if (current_stamina > 0) //отдых
             {
                 current_stamina -= 1 * Time.deltaTime;

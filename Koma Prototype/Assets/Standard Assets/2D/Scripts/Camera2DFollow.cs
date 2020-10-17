@@ -13,6 +13,7 @@ namespace UnityStandardAssets._2D
         public float lookDistance;
         public LayerMask enemyLayerMask;
         public float speed;
+        public Vector3 offcet;
 
 
         private float m_OffsetZ;
@@ -67,7 +68,7 @@ namespace UnityStandardAssets._2D
             // Vector2 newPos = Vector2.Slerp(target.position, m_DetectedEnemy.transform.position, .5f);
             Vector3 pos = Vector3.Slerp(target.position, m_DetectedEnemy.transform.position, .5f);
             Vector3 newPos = Vector3.MoveTowards(transform.position, pos, speed);
-            transform.position = new Vector3(newPos.x, newPos.y, transform.position.z);
+            transform.position = new Vector3(newPos.x, newPos.y, (transform.position.z + offcet.z));
         }
 
         private void OnDrawGizmos()
