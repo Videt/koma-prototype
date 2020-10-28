@@ -1,7 +1,73 @@
 fileFormatVersion: 2
 guid: 48dd435d07f37fd45bb2a46ea9c1c1e5
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8082881841724794475
+    second: mushroomsSwamp_0
+  - first:
+      213: -7312157612181527946
+    second: mushroomsSwamp_1
+  - first:
+      213: -7844883813500039300
+    second: mushroomsSwamp_2
+  - first:
+      213: -8863305660849542747
+    second: mushroomsSwamp_3
+  - first:
+      213: 5754899026669085898
+    second: mushroomsSwamp_4
+  - first:
+      213: 3477866291325770404
+    second: mushroomsSwamp_5
+  - first:
+      213: 4150828073045508938
+    second: mushroomsSwamp_6
+  - first:
+      213: 5385901682237287978
+    second: mushroomsSwamp_7
+  - first:
+      213: 966313083823630964
+    second: mushroomsSwamp_8
+  - first:
+      213: -4336370702840999103
+    second: mushroomsSwamp_9
+  - first:
+      213: -8654047284398381685
+    second: mushroomsSwamp_10
+  - first:
+      213: 3945588931427632388
+    second: mushroomsSwamp_11
+  - first:
+      213: 8784471979514436037
+    second: mushroomsSwamp_12
+  - first:
+      213: -3206966203603031097
+    second: mushroomsSwamp_13
+  - first:
+      213: 2190861887617099718
+    second: mushroomsSwamp_14
+  - first:
+      213: 5072992807548867543
+    second: mushroomsSwamp_15
+  - first:
+      213: 8090655852290931820
+    second: mushroomsSwamp_16
+  - first:
+      213: 4868328129656880628
+    second: mushroomsSwamp_17
+  - first:
+      213: -1171528977147283036
+    second: mushroomsSwamp_18
+  - first:
+      213: 4202597224485357962
+    second: mushroomsSwamp_19
+  - first:
+      213: -371632414847478227
+    second: mushroomsSwamp_20
+  - first:
+      213: 6310354833320558404
+    second: mushroomsSwamp_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +106,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -71,9 +137,507 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: mushroomsSwamp_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 12
+        width: 78
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b662679c53a2c2070800000000000000
+      internalID: 8082881841724794475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_1
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 20
+        width: 61
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6726048a46ff58a90800000000000000
+      internalID: -7312157612181527946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_2
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 38
+        width: 42
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f4e105cbf512390800000000000000
+      internalID: -7844883813500039300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_3
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 42
+        width: 55
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9aa5516763ff480800000000000000
+      internalID: -8863305660849542747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_4
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 38
+        width: 45
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac42ada8c228ddf40800000000000000
+      internalID: 5754899026669085898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_5
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 12
+        width: 63
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa17c627fcd34030800000000000000
+      internalID: 3477866291325770404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_6
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 20
+        width: 80
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a43c891f324ba9930800000000000000
+      internalID: 4150828073045508938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_7
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 0
+        width: 87
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2eaee45b019eba40800000000000000
+      internalID: 5385901682237287978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_8
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 28
+        width: 37
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47aae1741a8096d00800000000000000
+      internalID: 966313083823630964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_9
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 28
+        width: 38
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14350c222dd12d3c0800000000000000
+      internalID: -4336370702840999103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_10
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 37
+        width: 54
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85200098d5a6e780800000000000000
+      internalID: -8654047284398381685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_11
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 45
+        width: 42
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405057f7a3c81c630800000000000000
+      internalID: 3945588931427632388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_12
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 40
+        width: 40
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c9945629b6b8e970800000000000000
+      internalID: 8784471979514436037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_13
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 44
+        width: 28
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbee83aa319e73d0800000000000000
+      internalID: -3206966203603031097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_14
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 43
+        width: 43
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c7eb537741876e10800000000000000
+      internalID: 2190861887617099718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_15
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 47
+        width: 36
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3df02a414e66640800000000000000
+      internalID: 5072992807548867543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_16
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 59
+        width: 43
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c7cbba1a8c74070800000000000000
+      internalID: 8090655852290931820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_17
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 62
+        width: 36
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd7d32f3a6cf8340800000000000000
+      internalID: 4868328129656880628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_18
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 53
+        width: 31
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a93f013a94edbfe0800000000000000
+      internalID: -1171528977147283036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_19
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 75
+        width: 38
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a890e7bc8ef925a30800000000000000
+      internalID: 4202597224485357962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_20
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 52
+        width: 43
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26def5a942b7daf0800000000000000
+      internalID: -371632414847478227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mushroomsSwamp_21
+      rect:
+        serializedVersion: 2
+        x: 1377
+        y: 37
+        width: 72
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44fbdb68942e29750800000000000000
+      internalID: 6310354833320558404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

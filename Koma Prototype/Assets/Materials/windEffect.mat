@@ -61,7 +61,7 @@ Material:
     - _WindFrecuency: 37
     - _WindGustDistance: 1.9
     - _WindIntensity: 0.4
-    - _WindSpeed: 0.86
+    - _WindSpeed: 2.28
     - _WindStrength: 0.12
     - windSpeed: 1
     m_Colors:
