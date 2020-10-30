@@ -48,7 +48,8 @@ public class Test_Slide : MonoBehaviour
                     StartCoroutine(ReloadGrab());
                     Debug.Log("Я устал!");
                 }
-                playerRigidbody2d.velocity = new Vector2(playerVelocity.x, wallSlideSpeed); // движение по стене
+
+                playerRigidbody2d.velocity = new Vector2(playerVelocity.x, wallSlideSpeed); // движение по стене               
                 current_stamina += 1 * Time.deltaTime; // тратим силу на то чтобы ползти
             }          
         }
