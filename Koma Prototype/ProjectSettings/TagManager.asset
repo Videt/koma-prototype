@@ -13,6 +13,7 @@ TagManager:
   - Object
   - ZoomMin
   - ZoomMax
+  - GM
   layers:
   - Default
   - TransparentFX
