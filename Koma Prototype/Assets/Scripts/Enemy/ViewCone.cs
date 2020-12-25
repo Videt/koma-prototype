@@ -12,7 +12,7 @@ public class ViewCone : MonoBehaviour
 
     private Mesh mesh;
     private Vector3 origin; //координата начала треугольника (конуса зрения)
-    private float angle = 0f; //в каком направлении светит луч
+    private float angle = 20f; //в каком направлении светит луч
     private float angleIncrease;
     private Vector2 axis;
     private float oldAngle;
@@ -21,7 +21,7 @@ public class ViewCone : MonoBehaviour
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
         origin = Vector3.zero;
-        fov = 90f;
+        fov = 50f;
     }
     private void Update()
     {
@@ -41,12 +41,12 @@ public class ViewCone : MonoBehaviour
     {
         if (axis.x > 0) //идет вправо
         {
-            angle = 0f;
+            angle = 20f;
             oldAngle = angle;
         }
         else if (axis.x < 0)
         {
-            angle = 270f;
+            angle = 210f;
             oldAngle = angle;
         }
         else //когда не движется сохраняется старое местоположение конуса
