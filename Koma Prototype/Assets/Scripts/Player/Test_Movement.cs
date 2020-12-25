@@ -66,6 +66,8 @@ public class Test_Movement : MonoBehaviour
             Jump();
             
         }
+
+        Umbrella();
     }
 
     void flip()
@@ -98,6 +100,21 @@ public class Test_Movement : MonoBehaviour
         currentJump++;
         playerRigidbody2D.velocity = new Vector2(playerVelocity.x, maxJumpSpeed);
         isGround = false;
+    }
+
+    //функция зонтика
+    void Umbrella()
+    {
+        //если нажать на V, то откроет зонт (замедлит падение)
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            playerRigidbody2D.drag = 10;
+        }
+        //если приземлиться или нажать B, то зонтик закроется
+        if (Input.GetKeyDown(KeyCode.B) || isGround == true)
+        {
+            playerRigidbody2D.drag = 0;
+        }
     }
 }
 
