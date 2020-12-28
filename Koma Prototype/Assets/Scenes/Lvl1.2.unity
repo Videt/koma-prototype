@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -170,8 +170,8 @@ PolygonCollider2D:
       - {x: 1.3471459, y: 17.849432}
       - {x: 9.625849, y: 22.593151}
       - {x: 19.086098, y: 25.278349}
-      - {x: 29.925404, y: 26.141409}
-      - {x: 41.206512, y: 25.970585}
+      - {x: 29.92518, y: 26.141405}
+      - {x: 42.140907, y: 26.576569}
       - {x: 53.48146, y: 23.774378}
       - {x: 62.821434, y: 20.689823}
       - {x: 73.06999, y: 14.688414}
@@ -252,7 +252,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 1
-    - position: {x: 41.205734, y: 25.966213, z: 0}
+    - position: {x: 42.139843, y: 26.572258, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -396,8 +396,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 17c02aa8677444d4292700082f6830cd, type: 3}
   - {fileID: 21300000, guid: a10f1dfb99f4f42488e7f705a9f8b133, type: 3}
   m_LocalAABB:
-    m_Center: {x: 39.768284, y: 10.798488, z: -0.00070005}
-    m_Extent: {x: 50.403946, y: 17.55823, z: 0.00070005}
+    m_Center: {x: 39.768284, y: 11.015555, z: -0.00070005}
+    m_Extent: {x: 50.403946, y: 17.775297, z: 0.00070005}
 --- !u!4 &70189926
 Transform:
   m_ObjectHideFlags: 0
@@ -1012,7 +1012,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 745804335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: -12.2, z: 0}
+  m_LocalPosition: {x: -7, y: -12.2, z: 0}
   m_LocalScale: {x: 0.9860643, y: 1.0132209, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1477,7 +1477,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217299301}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 260.51, y: -17.26, z: 0}
+  m_LocalPosition: {x: 260.37, y: -17.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3754,7 +3754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806306703}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.59, y: -3.91, z: 0}
+  m_LocalPosition: {x: -22, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
