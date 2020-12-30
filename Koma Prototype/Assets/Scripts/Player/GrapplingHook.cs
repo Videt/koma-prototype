@@ -21,12 +21,12 @@ public class GrapplingHook : MonoBehaviour
 
     GameObject target;
 
-    public SpringJoint2D spring; //висит на крюке
+    public SpringJoint2D springJoint; //висит на крюке
 
     void Start()
     {
         lineRenderer.enabled = false;
-        spring.enabled = false;
+        springJoint.enabled = false;
     }
     
     void Update()
@@ -81,7 +81,7 @@ public class GrapplingHook : MonoBehaviour
     void Release()
     {
         lineRenderer.enabled = false;
-        spring.enabled = false;
+        springJoint.enabled = false;
         target = null;
     }
 
@@ -89,7 +89,7 @@ public class GrapplingHook : MonoBehaviour
     {
         target = hit;
         lineRenderer.enabled = true;
-        spring.enabled = true;
-        spring.connectedBody = target.GetComponent<Rigidbody2D>();
+        springJoint.enabled = true;
+        springJoint.connectedBody = target.GetComponent<Rigidbody2D>();
     }
 }

@@ -17,6 +17,7 @@ TagManager:
   - DeathZone
   - Hook
   - Box
+  - Pushable
   layers:
   - Default
   - TransparentFX
