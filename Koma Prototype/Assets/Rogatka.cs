@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Rogatka : MonoBehaviour
 {
-    private Vector3 startPos;
-    public Vector3 initPos;
+    private Vector3 startPos = Vector3.zero;
+    public Vector3 initPos = Vector3.zero;
     private Vector3 endPos;
     private Vector3 forceAtPlayer;
     private Rigidbody2D rb;
@@ -14,6 +14,7 @@ public class Rogatka : MonoBehaviour
     public GameObject trajectoryDot;
     public GameObject[] trajectoryDots;
     private bool isPressed;
+    private Vector3 mousePos;
 
     public int number;
     void Start()
@@ -26,12 +27,12 @@ public class Rogatka : MonoBehaviour
     private void OnMouseDown()
     {
         isPressed = true;
-        rb.isKinematic=true;
+        //rb.isKinematic=true;
     }
     private void OnMouseUp()
     {
         isPressed = false;
-        rb.isKinematic = false;
+        //rb.isKinematic = false;
     }
     void Update()
     {
@@ -45,10 +46,11 @@ public class Rogatka : MonoBehaviour
         }
         if (Input.GetMouseButton(0))  //drag
         {
-            endPos = Camera.main.ScreenToViewportPoint(Input.mousePosition) ;
+            mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            endPos = new Vector3(mousePos.x, mousePos.y, 0f);
             transform.position = endPos;
-            forceAtPlayer = endPos - startPos;
-            for (int i = 0; i<number; i++)
+            forceAtPlayer = endPos;
+            for (int i = 0; i < number; i++)
             {
                 trajectoryDots[i].transform.position = calculatePosition(i  * 0.1f);
             }
