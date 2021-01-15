@@ -51,9 +51,9 @@ Material:
     m_Floats:
     - Vector1_643D8155: 0.1
     - Vector1_69C83D05: 2
-    - Vector1_7C988D55: 0.38
+    - Vector1_7C988D55: 2.33
     - Vector1_C2905212: 1
-    - Vector1_E55E6978: 2.63
+    - Vector1_E55E6978: 1.33
     - _DisplacementPower: 0.025
     - _EnableExternalAlpha: 0
     - _Glossiness: 0.5
@@ -61,7 +61,7 @@ Material:
     - _WindFrecuency: 37
     - _WindGustDistance: 1.9
     - _WindIntensity: 0.4
-    - _WindSpeed: 2.28
+    - _WindSpeed: 0.16
     - _WindStrength: 0.12
     - windSpeed: 1
     m_Colors:

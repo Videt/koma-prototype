@@ -1,0 +1,518 @@
+fileFormatVersion: 2
+guid: 86dbd5428ac7a6a4a83ecf3b84642666
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3625034489270292644
+    second: waterColor_0
+  - first:
+      213: 493764025225706387
+    second: waterColor_1
+  - first:
+      213: -5842482196602600941
+    second: waterColor_2
+  - first:
+      213: 513045471143738355
+    second: waterColor_3
+  - first:
+      213: -7191647740625314586
+    second: waterColor_4
+  - first:
+      213: 4125586485112801176
+    second: waterColor_5
+  - first:
+      213: 6947089045725238760
+    second: waterColor_6
+  - first:
+      213: -7395747564467265587
+    second: waterColor_7
+  - first:
+      213: -3695579261202033297
+    second: waterColor_8
+  - first:
+      213: -3989891583144875146
+    second: waterColor_9
+  - first:
+      213: -4727835202120508026
+    second: waterColor_10
+  - first:
+      213: -3199135664233449447
+    second: waterColor_11
+  - first:
+      213: 6516153920477855730
+    second: waterColor_12
+  - first:
+      213: 2403705243578844662
+    second: waterColor_13
+  - first:
+      213: 1652266295238504851
+    second: waterColor_14
+  - first:
+      213: -6104414763452371812
+    second: waterColor_15
+  - first:
+      213: -8697040581066745796
+    second: waterColor_16
+  - first:
+      213: -8055252057146493462
+    second: waterColor_17
+  - first:
+      213: 3327490755587796888
+    second: waterColor_18
+  - first:
+      213: -116433646285953831
+    second: waterColor_19
+  - first:
+      213: 6976593870361873916
+    second: waterColor_20
+  - first:
+      213: -6527742248298265825
+    second: waterColor_21
+  - first:
+      213: 5197788635603147599
+    second: waterColor_22
+  - first:
+      213: -683554291080868116
+    second: waterColor_23
+  - first:
+      213: 4638320725232719040
+    second: waterColor_24
+  - first:
+      213: -3624965814268736999
+    second: waterColor_25
+  - first:
+      213: 7319873777022862346
+    second: waterColor_26
+  - first:
+      213: -9132890994696385805
+    second: waterColor_27
+  - first:
+      213: 3260302077401153227
+    second: waterColor_28
+  - first:
+      213: -3876520695259396471
+    second: waterColor_29
+  - first:
+      213: -4752271974918436406
+    second: waterColor_30
+  - first:
+      213: -8981690816383279842
+    second: waterColor_31
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: waterColor_0
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 2307
+        width: 610
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f2188965a41bdc0800000000000000
+      internalID: -3625034489270292644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterColor_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2307
+        width: 119
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31245f0a5655beea0800000000000000
+      internalID: -5842482196602600941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterColor_3
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 2360
+        width: 532
+        height: 299
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb35254324be1700800000000000000
+      internalID: 513045471143738355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterColor_7
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 2446
+        width: 70
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcfd77346c60d5990800000000000000
+      internalID: -7395747564467265587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterColor_13
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 1726
+        width: 606
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f5c2440f2dab5120800000000000000
+      internalID: 2403705243578844662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterColor_14
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 1759
+        width: 634
+        height: 498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391ba0201770ee610800000000000000
+      internalID: 1652266295238504851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterColor_15
+      rect:
+        serializedVersion: 2
+        x: 2252
+        y: 1818
+        width: 453
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c65ce7d13c84ba0800000000000000
+      internalID: -6104414763452371812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterColor_18
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1592
+        width: 71
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fe430663f9d2e20800000000000000
+      internalID: 3327490755587796888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterColor_22
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 888
+        width: 162
+        height: 419
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b10ba9931422840800000000000000
+      internalID: 5197788635603147599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterColor_23
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 970
+        width: 767
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee4e6f6ef68386f0800000000000000
+      internalID: -683554291080868116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterColor_25
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 743
+        width: 878
+        height: 666
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ac39d3cc881bdc0800000000000000
+      internalID: -3624965814268736999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterColor_27
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 388
+        width: 670
+        height: 355
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa02c84704714180800000000000000
+      internalID: -9132890994696385805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterColor_29
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 198
+        width: 736
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9860d9267f4d33ac0800000000000000
+      internalID: -3876520695259396471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: waterColor_31
+      rect:
+        serializedVersion: 2
+        x: 1118
+        y: 173
+        width: 102
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d161f1acf9a5380800000000000000
+      internalID: -8981690816383279842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
