@@ -1,0 +1,803 @@
+fileFormatVersion: 2
+guid: 25b33e4507dd9fa43918c67d2ba8e738
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6058256772073059788
+    second: wood3_0
+  - first:
+      213: -8279097264281421903
+    second: wood3_1
+  - first:
+      213: 1616681761499318017
+    second: wood3_2
+  - first:
+      213: 5691794958199100263
+    second: wood3_3
+  - first:
+      213: 6202171931755662783
+    second: wood3_4
+  - first:
+      213: -8615614746822976906
+    second: wood3_5
+  - first:
+      213: 10132564721287747
+    second: wood3_6
+  - first:
+      213: 4510436050664382971
+    second: wood3_7
+  - first:
+      213: -2987864824430534836
+    second: wood3_8
+  - first:
+      213: 407514928808807924
+    second: wood3_9
+  - first:
+      213: 190770998740439767
+    second: wood3_10
+  - first:
+      213: 1338361612690324411
+    second: wood3_11
+  - first:
+      213: 3336561238314276352
+    second: wood3_12
+  - first:
+      213: 3107514044569640195
+    second: wood3_13
+  - first:
+      213: -6437263478293641504
+    second: wood3_14
+  - first:
+      213: 6295195528698123351
+    second: wood3_15
+  - first:
+      213: -7531813611284516413
+    second: wood3_16
+  - first:
+      213: -6778360000341719408
+    second: wood3_17
+  - first:
+      213: 8769945351627336747
+    second: wood3_18
+  - first:
+      213: -5609480866887775197
+    second: wood3_19
+  - first:
+      213: 8459186469719273711
+    second: wood3_20
+  - first:
+      213: 7443877847666126257
+    second: wood3_21
+  - first:
+      213: 4619969604473000588
+    second: wood3_22
+  - first:
+      213: -6326554675324234745
+    second: wood3_23
+  - first:
+      213: -5654936641633993660
+    second: wood3_24
+  - first:
+      213: -8440633911976491985
+    second: wood3_25
+  - first:
+      213: 2409867714986552346
+    second: wood3_26
+  - first:
+      213: 8813613247326026688
+    second: wood3_27
+  - first:
+      213: -2635118944869424375
+    second: wood3_28
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wood3_1
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 24
+        width: 255
+        height: 2719
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7f89517ecba1d80800000000000000
+      internalID: -8279097264281421903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_2
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 2605
+        width: 21
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107050d1f7b9f6610800000000000000
+      internalID: 1616681761499318017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_3
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 2580
+        width: 29
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76311d9ab515dfe40800000000000000
+      internalID: 5691794958199100263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_4
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2583
+        width: 25
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbdc13ce28a821650800000000000000
+      internalID: 6202171931755662783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_5
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 2595
+        width: 20
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67adff509003f6880800000000000000
+      internalID: -8615614746822976906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_6
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 2595
+        width: 24
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34240e0938ff32000800000000000000
+      internalID: 10132564721287747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_7
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 2602
+        width: 28
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf167f5d0b9489e30800000000000000
+      internalID: 4510436050664382971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_8
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 2579
+        width: 26
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fdee6c5c8f886d0800000000000000
+      internalID: -2987864824430534836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_9
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 2583
+        width: 22
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fd415c2ba8c7a500800000000000000
+      internalID: 407514928808807924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_10
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 2608
+        width: 20
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2de5d6631c5a200800000000000000
+      internalID: 190770998740439767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_11
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 98
+        width: 293
+        height: 2723
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbfc69bbc0d29210800000000000000
+      internalID: 1338361612690324411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_12
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 109
+        width: 307
+        height: 2754
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0065f05b4c8dd4e20800000000000000
+      internalID: 3336561238314276352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_13
+      rect:
+        serializedVersion: 2
+        x: 1923
+        y: 137
+        width: 200
+        height: 2720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d5c192f8b102b20800000000000000
+      internalID: 3107514044569640195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_14
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 2535
+        width: 750
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e646baf8fe3aa6a0800000000000000
+      internalID: -6437263478293641504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_15
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2459
+        width: 745
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754ddafdaf60d5750800000000000000
+      internalID: 6295195528698123351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_16
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 2167
+        width: 95
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c13fe00d6f997790800000000000000
+      internalID: -7531813611284516413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_17
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 2177
+        width: 68
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0964ae33e7d6ee1a0800000000000000
+      internalID: -6778360000341719408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_18
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 2188
+        width: 93
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ce55705da15b970800000000000000
+      internalID: 8769945351627336747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_19
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 2185
+        width: 87
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ccdc23fde1722b0800000000000000
+      internalID: -5609480866887775197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_20
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 2191
+        width: 82
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe078688641156570800000000000000
+      internalID: 8459186469719273711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_21
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 2192
+        width: 77
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bde98d8677fd4760800000000000000
+      internalID: 7443877847666126257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_22
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 2163
+        width: 104
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8217bba0ed6d1040800000000000000
+      internalID: 4619969604473000588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_23
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 2163
+        width: 78
+        height: 220
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7045635da009338a0800000000000000
+      internalID: -6326554675324234745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_24
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 2164
+        width: 92
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44cb018e511a581b0800000000000000
+      internalID: -5654936641633993660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_25
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1801
+        width: 83
+        height: 322
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24868d6d28dcda80800000000000000
+      internalID: -8440633911976491985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_26
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1817
+        width: 118
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ca4733be1917120800000000000000
+      internalID: 2409867714986552346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_27
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 1823
+        width: 97
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb7b8a4d8e305a70800000000000000
+      internalID: 8813613247326026688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wood3_28
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1830
+        width: 101
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903e726f74d2e6bd0800000000000000
+      internalID: -2635118944869424375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
